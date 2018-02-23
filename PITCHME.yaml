@@ -9,6 +9,7 @@ theme-override : assets/css/PITCHME.css
 # theme-override : assets/css/PITCHME.codemax.css
 # logo : assets/images/logo.png
 charts : true
+mathjax : TeX-AMS_HTML-full
 highlight : atom-one-light
 transition : none
 published : true

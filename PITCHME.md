@@ -438,14 +438,17 @@ lemmatize('meeting') = 'meet'
 
 Intends to obtain a Vector Space representation of a document, originally in text domain.
 
+<hr>
+
 - Madrid looks sunnier than usual this spring
 - Real Madrid plays against Atlético Madrid tonight
 
-<br>
-
 <table>
   <tr>
-    <td rowspan="4">Docs</td>
+    <td rowspan="4">
+
+    Docs
+    </td>
     <td colspan="6">Terms</td>
   </tr>
   <tr>
@@ -511,15 +514,13 @@ Real Madrid plays against Atlético Madrid tonight.
   </tr>
 </table>
 
-@fa[arrow-down]
-
 ---
 
 **TF-IDF: TF**
+<br>
+<div style="text-align: left"><span style="color:gray; font-size:0.6em">Term Frequency</span></div>
 
 > Different measures of raw frequency.
-
-<div style="text-align: right"><span style="color:gray; font-size:0.5em">Term Frequency</span></div>
 
 `\begin{eqnarray}
 tf(t,d) & = & f(t,d) \nonumber\\
@@ -532,10 +533,10 @@ tf(t,d) & = & \dfrac{f(t,d)}{\max \lbrace f(w,d) : w \in D \rbrace} \nonumber
 +++
 
 **TF-IDF: IDF**
+<br>
+<div style="text-align: left"><span style="color:gray; font-size:0.6em">Inverse Document Frequency</span></div>
 
 > Commonality of the term in the whole collection of documents.
-
-<div style="text-align: right"><span style="color:gray; font-size:0.5em">Inverse Document Frequency</span></div>
 
 `\begin{equation*}
 idf(t,D) = \log \dfrac{|D|}{|\lbrace d \in D : t \in d \rbrace|}
@@ -549,6 +550,10 @@ idf(t,D) = \log \dfrac{|D|}{|\lbrace d \in D : t \in d \rbrace|}
 
 <span style="color:gray; font-size:0.5em">Visualization of 3M words from GoogleNews dataset as embedded by  [UMAP](https://arxiv.org/pdf/1802.03426.pdf)</span>
 
+@fa[arrow-down]
+
++++
+
 <span style="font-size:0.6em; color:gray">[GloVe](https://nlp.stanford.edu/projects/glove/)</span> |
 <span style="font-size:0.6em; color:gray">[Word2Vec / Doc2Vec](https://arxiv.org/pdf/1301.3781.pdf?)</span>
 
@@ -556,16 +561,9 @@ idf(t,D) = \log \dfrac{|D|}{|\lbrace d \in D : t \in d \rbrace|}
 
 ### Extract insights
 
-<br><br>
+![Dashboard](assets/images/dashboard.png)
 
-@fa[arrow-down]
-
-+++
-
-**Why?**
-
-<br>
-
+<div style="text-align: left"><span style="color:gray; font-size:0.5em">[Dashboard](https://plot.ly/python/dashboard/) example in [Plotly](https://plot.ly)</span></div>
 
 ---
 
