@@ -54,25 +54,30 @@ Please, do not take my opinions too seriously as I tend to be wrong more times t
 
 ### What is Natural Language Processing?
 
-> Are there imaginable digital computers which would do well in the *imitation game*?
-
 <br>
+
+> Are there imaginable digital computers which would do well in the imitation game?
+
 <div style="text-align: right"><span style="color:gray; font-size:0.5em">Alan Turing, "Computing Machinery and Intelligence", 1950</span></div>
 
 @fa[arrow-down]
 
 +++
 
-> Natural language processing (NLP) can be defined as the ability of a machine to analyze, understand, and generate human speech. The goal of NLP is to make interactions between computers and humans feel exactly like interactions between humans and humans.
+> The ability of a machine to analyze, understand, and generate human speech. Its goal is to make interactions between computers and humans feel exactly like interactions between humans and humans.
 
-<br>
-<div style="text-align: right"><span style="color:gray; font-size:0.5em">[NeoSpeech, 2013](https://blog.neospeech.com/what-is-natural-language-processing/)</span></div>
+<div style="text-align: right"><span style="color:gray; font-size:0.5em">[NeoSpeech, 2013](https://blog.neospeech.com/what-is-natural-language-processing/) definition of NLP</span></div>
 
 @fa[arrow-down]
 
 +++
 
-### Applications:
+### Applications
+
+<br><br>
+@fa[arrow_down]
+
++++
 
 **Chatbots**
 
@@ -86,7 +91,7 @@ Please, do not take my opinions too seriously as I tend to be wrong more times t
 
 **Spam filtering**
 
-![Image-Absolute](https://images.pexels.com/photos/265651/pexels-photo-265651.jpeg?w=600&h=480&auto=compress&cs=tinysrgb)
+![Image-Absolute](https://images.pexels.com/photos/265651/pexels-photo-265651.jpeg?w=500&h=400&auto=compress&cs=tinysrgb)
 
 <span style="font-size:0.5em; color:gray">Analyzes header</span> |
 <span style="font-size:0.5em; color:gray">Explores content</span> |
@@ -119,7 +124,7 @@ Please, do not take my opinions too seriously as I tend to be wrong more times t
 
 **News summarization**
 
----?image=assets/images/agolo_screenshot.png&size=75% 75%
+![Image-Relative](assets/images/agolo_screenshot.png)
 
 <span style="color:gray; font-size:0.5em">[Agolo](https://www.agolo.com) is a commercial news summarizer software.</span>
 
@@ -128,9 +133,10 @@ Please, do not take my opinions too seriously as I tend to be wrong more times t
 
 +++
 
-## Algorithmic trading
+**Algorithmic trading**
 
 <canvas data-chart="line">
+<!--
 {
  "data": {
   "labels": ["Sep 22","Sep 23","Sep 24","Sep 25","Sep 26","Sep 27","Sep 28", "Sep 29", "Sep 30"],
@@ -143,6 +149,7 @@ Please, do not take my opinions too seriously as I tend to be wrong more times t
  },
  "options": { "responsive": "true" }
 }
+-->
 </canvas>
 
 <span style="color:gray; font-size:0.5em">Cryptocurrencies ZEC/BTE exchange rate</span>
