@@ -19,7 +19,7 @@ Please, do not take my opinions too seriously as I tend to be wrong more times t
 
 <span style="color:gray; font-size:0.6em">Linkedin: [fernandorabanal](https://www.linkedin.com/in/fernandorabanal/)</span> |
 <span style="color:gray; font-size:0.6em">Email: [frabanalpresa@gmail.com](mailto:frabanalpresa@gmail.com)</span>
-
+<br>
 
 @fa[arrow-down]
 
@@ -28,6 +28,7 @@ Please, do not take my opinions too seriously as I tend to be wrong more times t
 - Telecommunications Engineer -- UVa
 - MSc. Multimedia and Communications (Signal Theory) -- UC3M
 - *Kaggle* Master level (Competition winner)
+<br>
 
 @fa[arrow-down]
 
@@ -43,21 +44,20 @@ Please, do not take my opinions too seriously as I tend to be wrong more times t
 
 #### But it is more interesting to see what can you do
 
-<br>
-
-- Complete a **MSc** program in Data Science (you're on the right track!) |
+- Complete a **MSc** program in Data Science (you're on the right track!)
 - Complement your knowledge with some MOOC programs |
 - Practice with different problems |
 - Enter Data Science competitions |
-- **Provide value to your company**
+- **Provide value to your company** |
 
 ---
 
-## What is Natural Language Processing?
+### What is Natural Language Processing?
 
 > Are there imaginable digital computers which would do well in the *imitation game*?
 
-<div style="text-align: right">Alan Turing, "Computing Machinery and Intelligence", 1950</div>
+<br>
+<div style="text-align: right"><span style="color:gray; font-size:0.5em">Alan Turing, "Computing Machinery and Intelligence", 1950</span></div>
 
 @fa[arrow-down]
 
@@ -65,7 +65,8 @@ Please, do not take my opinions too seriously as I tend to be wrong more times t
 
 > Natural language processing (NLP) can be defined as the ability of a machine to analyze, understand, and generate human speech. The goal of NLP is to make interactions between computers and humans feel exactly like interactions between humans and humans.
 
-<div style="text-align: right">[NeoSpeech, 2013](https://blog.neospeech.com/what-is-natural-language-processing/)</div>
+<br>
+<div style="text-align: right"><span style="color:gray; font-size:0.5em">[NeoSpeech, 2013](https://blog.neospeech.com/what-is-natural-language-processing/)</span></div>
 
 @fa[arrow-down]
 
@@ -85,17 +86,17 @@ Please, do not take my opinions too seriously as I tend to be wrong more times t
 
 **Spam filtering**
 
-![Image-Absolute](https://images.pexels.com/photos/265651/pexels-photo-265651.jpeg?w=800&h=600&auto=compress&cs=tinysrgb)
+![Image-Absolute](https://images.pexels.com/photos/265651/pexels-photo-265651.jpeg?w=600&h=480&auto=compress&cs=tinysrgb)
 
-<span style="font-size:0.6em; color:gray">Analyzes header</span> |
-<span style="font-size:0.6em; color:gray">Explores content</span> |
-<span style="font-size:0.6em; color:gray">Checks for spamming rules</span>
+<span style="font-size:0.5em; color:gray">Analyzes header</span> |
+<span style="font-size:0.5em; color:gray">Explores content</span> |
+<span style="font-size:0.5em; color:gray">Checks for spamming rules</span>
 
 @fa[arrow-down]
 
 +++
 
-## Text classification
+**Text classification**
 
 ![Image-Absolute](https://cdn-images-1.medium.com/max/1600/1*ljCBykAJUnvaZcuPYwm4_A.png)
 
@@ -106,7 +107,7 @@ Please, do not take my opinions too seriously as I tend to be wrong more times t
 
 +++
 
-## Text tagging (clustering)
+**Text tagging (clustering)**
 
 ![Image-Relative](assets/images/flickr_tags_screenshot.png)
 
@@ -116,9 +117,9 @@ Please, do not take my opinions too seriously as I tend to be wrong more times t
 
 +++
 
-## News summarization
+**News summarization**
 
-![Image-Absolute](assets/images/agolo_screenshot.png)
+---?image=assets/images/agolo_screenshot.png&size=75% 75%
 
 <span style="color:gray; font-size:0.5em">[Agolo](https://www.agolo.com) is a commercial news summarizer software.</span>
 
