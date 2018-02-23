@@ -13,6 +13,10 @@ All materials provided here reflect my own views and not those of my employer.
 Please, do not take my opinions too seriously as I tend to be wrong more times than expected (on average) every single day.
 
 ---
+
+[https://gitpitch.com/frabanalpresa/mbds/slides](https://gitpitch.com/frabanalpresa/mbds/slides)
+
+---
 ### Who am I?
 
 ![CatGIF](https://i.giphy.com/media/JIX9t2j0ZTN9S/giphy-downsized.gif)
@@ -309,16 +313,6 @@ lemmatize('meeting') = 'meet'
 
 +++
 
-- A list of non-informative words (*stopwords*) can be tailored for each language of interest.
-- Topic-specific stopwords can be added to the generic list to separate the 'signal' from the 'noise' in a specific
-problem.
-- Stopwords list is usually removed after lowercase normalization to avoid exploring different cases related to
-unnormalized documents.
-
-@fa[arrow-down]
-
-+++
-
 **Stopword list (ES)**
 <br>
 
@@ -355,13 +349,41 @@ unnormalized documents.
   </tr>
 </table>
 
+
+@fa[arrow-down]
+
++++
+
+**Stopword list (domain-specific, EN)**
+<br>
+
+<table>
+  <tr>
+    <td>et al</td>
+    <td>figure</td>
+    <td>table</td>
+  </tr>
+  <tr class="fragment">
+    <td>section</td>
+    <td>work</td>
+    <td>introduction</td>
+  </tr>
+  <tr class="fragment">
+    <td>conclusions</td>
+    <td>references</td>
+    <td>abstract</td>
+  </tr>
+</table>
+
+<span style="color:gray; font-size:0.5em">Normalized stopwords, **lowercase**</span>
+
 ---
 
 **Tokenization**
 
 ![Image-Absolute](assets/images/tokenization_example.png)
 
-<span style="color:gray; font-size:0.5em">Tokenization example</span>
+<div style="text-align: right"><span style="color:gray; font-size:0.5em">Tokenization example</span></div>
 
 > Tokenization is the process of demarcating and possibly classifying sections of a string of input characters.
 
@@ -383,7 +405,7 @@ unnormalized documents.
 ```
 @[1-2](Split sentences by spaces)
 @[4](Account for words with numbers!)
-@[5](Hyphens in words)
+@[6](Hyphens in words)
 
 @fa[arrow-down]
 
@@ -416,19 +438,39 @@ unnormalized documents.
 
 Intends to obtain a Vector Space representation of a document, originally in text domain.
 
-- Madrid looks sunnier than usual this spring |
-- Real Madrid plays against Atlético Madrid tonight |
+- Madrid looks sunnier than usual this spring
+- Real Madrid plays against Atlético Madrid tonight
 
 <br>
 
 <table>
   <tr>
-    <td>Manual process</td>
-    <td>Data driven</td>
+    <td rowspan="4">Docs</td>
+    <td colspan="6">Terms</td>
+  </tr>
+  <tr>
+    <td>Madrid</td>
+    <td>looks</td>
+    <td>plays</td>
+    <td>sunnier</td>
+    <td>tonight</td>
+    <td>spring</td>
   </tr>
   <tr class="fragment">
-    <td>Task-specific</td>
-    <td>Language-specific</td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>1</td>
+    <td>0</td>
+    <td>1</td>
+  </tr>
+  <tr class="fragment">
+    <td>2</td>
+    <td>0</td>
+    <td>1</td>
+    <td>0</td>
+    <td>1</td>
+    <td>0</td>
   </tr>
 </table>
 
@@ -444,7 +486,10 @@ syllables, letters, words or base pairs according to the application.
 
 <div style="text-align: right"><span style="color:gray; font-size:0.5em">[n-gram](https://en.wikipedia.org/wiki/N-gram) Wikipedia page</span></div>
 
-<hr>
+@fa[arrow-down]
+
++++
+
 Real Madrid plays against Atlético Madrid tonight.
 
 <table>
@@ -468,11 +513,13 @@ Real Madrid plays against Atlético Madrid tonight.
 
 @fa[arrow-down]
 
-+++
+---
 
-## TF-IDF
+**TF-IDF: TF**
 
-Term Frequency: different measures of raw frequency.
+> Different measures of raw frequency.
+
+<div style="text-align: right"><span style="color:gray; font-size:0.5em">Term Frequency</span></div>
 
 `\begin{eqnarray}
 tf(t,d) & = & f(t,d) \nonumber\\
@@ -480,27 +527,49 @@ tf(t,d) & = & 1+log(f(t,d)) ~,~ (log(0) \coloneqq 0) \nonumber\\
 tf(t,d) & = & \dfrac{f(t,d)}{\max \lbrace f(w,d) : w \in D \rbrace} \nonumber
 \end{eqnarray}`
 
-<br>
+@fa[arrow-down]
 
-Inverse Document Frequency: commonality of the term in the whole collection of documents.
++++
+
+**TF-IDF: IDF**
+
+> Commonality of the term in the whole collection of documents.
+
+<div style="text-align: right"><span style="color:gray; font-size:0.5em">Inverse Document Frequency</span></div>
+
 `\begin{equation*}
 idf(t,D) = \log \dfrac{|D|}{|\lbrace d \in D : t \in d \rbrace|}
 \end{equation*}`
 
 ---
 
-## Word embeddings
+**Word embeddings**
 
-![Image-Absolute](assets/umap_embedding.png)
-
-- [GloVe](https://nlp.stanford.edu/projects/glove/)
-- [Word2Vec / Doc2Vec](https://arxiv.org/pdf/1301.3781.pdf?)
+![Image-Absolute](assets/images/umap_embedding.png)
 
 <span style="color:gray; font-size:0.5em">Visualization of 3M words from GoogleNews dataset as embedded by  [UMAP](https://arxiv.org/pdf/1802.03426.pdf)</span>
 
+<span style="font-size:0.6em; color:gray">[GloVe](https://nlp.stanford.edu/projects/glove/)</span> |
+<span style="font-size:0.6em; color:gray">[Word2Vec / Doc2Vec](https://arxiv.org/pdf/1301.3781.pdf?)</span>
+
 ---
 
-## Sentiment analysis
+### Extract insights
+
+<br><br>
+
+@fa[arrow-down]
+
++++
+
+**Why?**
+
+<br>
+
+
+---
+
+**Sentiment analysis**
 
 ![Image-Absolute](https://???.jpg)
 
@@ -508,7 +577,7 @@ idf(t,D) = \log \dfrac{|D|}{|\lbrace d \in D : t \in d \rbrace|}
 
 ---
 
-## Clustering
+**Clustering**
 
 ![Image-Absolute](https://???.jpg)
 
