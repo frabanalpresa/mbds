@@ -13,7 +13,7 @@ All materials provided here reflect my own views and not those of my employer.
 Please, do not take my opinions too seriously as I tend to be wrong more times than expected (on average) every single day.
 
 ---
-#### Who am I?
+### Who am I?
 
 ![CatGIF](https://i.giphy.com/media/JIX9t2j0ZTN9S/giphy-downsized.gif)
 
@@ -44,11 +44,11 @@ Please, do not take my opinions too seriously as I tend to be wrong more times t
 
 #### But it is more interesting to see what can you do
 
-- Complete a **MSc** program in Data Science (you're on the right track!)
+- Complete a MSc program in Data Science (you're on the right track!)
 - Complement your knowledge with some MOOC programs |
 - Practice with different problems |
 - Enter Data Science competitions |
-- **Provide value to your company** |
+- Provide value to your company |
 
 ---
 
@@ -75,7 +75,8 @@ Please, do not take my opinions too seriously as I tend to be wrong more times t
 ### Applications
 
 <br><br>
-@fa[arrow_down]
+
+@fa[arrow-down]
 
 +++
 
@@ -156,66 +157,104 @@ Please, do not take my opinions too seriously as I tend to be wrong more times t
 
 ---
 
-NLP usual workflow
-<!-- ?code=src/workflow.py&lang=python&title=NLP usual workflow
+**NLP usual workflow**
 
-@[1,3-6](Text preprocessing)
-@[8-18](Text modeling)
-@[19-28](Extract insights) -->
+```python
+# Text cleaning
+# Lemmatization / stemming
+# Stopwords
+# Tokenization
 
----
+# Bag of words / TF-IDF /
+# Word embeddings
 
-## Text preprocessing
-
-- Text is usually composed of words and characters in the real world.
-- Redundancy and use of low informative words (linkers, prepositions...) is used in text to provide context.
-- Variations of the same word (dog, dogs, puppies...) are used also to provide small differences in meaning, but
-they usually do not change the overall meaning of a document.
-- Machine Learning algorithms do usually take numeric tensors as inputs.
-
-<hr>
-
-- A document needs to be preprocessed to conform a viable numeric representation that represents it respect to the
-problem to be solved.
+# Sentiment analysis
+# Clustering
+# Supervised problems
+# Generative models
+```
+@[1-4](Text preprocessing)
+@[6-7](Text modeling)
+@[9-12](Extract insights)
 
 ---
 
-## Text cleaning
-
-?code=src/text_cleaning.py&lang=python&title=NLP usual workflow
-
-@[1,3-6](Strip markup tags)
-@[8-18](Remove URLs)
-@[19-28](Remove punctuation signs)
+### Text preprocessing
 
 @fa[arrow-down]
 
 +++
 
-## Text cleaning (II)
+**Why?**
 
-?code=src/text_cleaning.py&lang=python&title=NLP usual workflow
-
-@[1,3-6](Normalize to lowercase characters)
-@[8-18](Remove non-informative words, expressions...)
-@[19-28](Remove non-alphanumeric characters)
-
+<table>
+  <tr>
+    <td>Words</td>
+    <td>Lorem ipsum dolor sit amet...</td>
+  </tr>
+  <tr class="fragment">
+    <td>Redundancy</td>
+    <td>As already said before...</td>
+  </tr>
+  <tr class="fragment">
+    <td>Variations</td>
+    <td>dog, dogs, puppies...</td>
+  </tr>
+  <tr class="fragment">
+    <td>Math does</td>
+    <td>not allow words!</td>
+  </tr>
+</table>
 
 ---
 
-## Lemmatization
+**Text cleaning**
+
+```python
+import re
+from string
+
+text = re.sub(r'(<.*?>)', '', text)  # Use BeautifulSoup instead!
+text = re.sub(r'https?:\/\/.*[\r\n]*','', text)
+text = text.translate(None, string.punctuation)
+```
+
+@[1,4](Strip markup tags)
+@[1,5](Remove URLs)
+@[1-2,6](Remove punctuation signs)
+
+@fa[arrow-down]
+
++++
+
+**Text cleaning (II)**
+
+```python
+from nltk.corpus import stopwords
+
+text = text.lower()
+text = [word for word in text.split() if word not in ['et al', 'figure', 'table']]
+text = [word for word in text.split() if word not in stopwords.words('english')]
+```
+
+@[3](Normalize to lowercase characters)
+@[4](Remove non-informative words, expressions...)
+@[1, 5](Remove non-alphanumeric characters)
+
+---
+
+**Lemmatization**
 
 > Lemmatization is the process of grouping together the inflected forms of a word so they can be analysed
 as a single item, identified by the word's **lemma**, or dictionary form.
-> Wikipedia (last access, Feb. 11, 2018)
 
-- It is a linguistic process, so language knowledge is used and assumed in this process.
+<div style="text-align: right"><span style="color:gray; font-size:0.5em">[Lemmatization](https://en.wikipedia.org/wiki/Lemmatisation) Wikipedia page</span></div>
 
 @fa[arrow-down]
 
 +++
 
-## Lemmatization examples
+**Lemmatization examples**
 
 ```python
 lemmatize('better') = 'good'
@@ -228,20 +267,18 @@ lemmatize('meeting') = ['meet', 'meeting']
 
 ---
 
-## Stemming
+**Stemming**
 
 > Stemming is the process of reducing inflected (or sometimes derived) words to their word stem,
 base or root form—generally a written word form.
-> Wikipedia (last access, Feb. 11, 2018)
 
-- It does not assume any linguistics involved, it is enough to map related words to a common root, even if this root
-is not a valid root morphologically speaking.
+<div style="text-align: right"><span style="color:gray; font-size:0.5em">[Stemming](https://en.wikipedia.org/wiki/Stemming) Wikipedia page</span></div>
 
 @fa[arrow-down]
 
 +++
 
-## Stemming examples
+**Stemming examples**
 
 ```python
 lemmatize('better') = 'better'
@@ -254,15 +291,9 @@ lemmatize('meeting') = 'meet'
 
 ---
 
-## Stopwords removal
+**Stopwords removal**
 
 ![Image-Absolute](http://www.michaeljgrogan.com/wp-content/uploads/2017/10/wordcloud-450x325.png)
-
-- A list of non-informative words (*stopwords*) can be tailored for each language of interest.
-- Topic-specific stopwords can be added to the generic list to separate the 'signal' from the 'noise' in a specific
-problem.
-- Stopwords list is usually removed after lowercase normalization to avoid exploring different cases related to
-unnormalized documents.
 
 <span style="color:gray; font-size:0.5em">tidytext: Word Clouds and Sentiment Analysis in R, [Michael Grogan](http://www.michaeljgrogan.com/tidytext-word-clouds-sentiment-r/)</span>
 
@@ -270,7 +301,18 @@ unnormalized documents.
 
 +++
 
-## Stopwords example (Spanish)
+- A list of non-informative words (*stopwords*) can be tailored for each language of interest.
+- Topic-specific stopwords can be added to the generic list to separate the 'signal' from the 'noise' in a specific
+problem.
+- Stopwords list is usually removed after lowercase normalization to avoid exploring different cases related to
+unnormalized documents.
+
+@fa[arrow-down]
+
++++
+
+**Stopword list (ES)**
+<br>
 
 <table>
   <tr>
@@ -307,15 +349,15 @@ unnormalized documents.
 
 ---
 
-## Tokenization
+**Tokenization**
 
 ![Image-Absolute](assets/tokenization_example.png)
 
 > Tokenization is the process of demarcating and possibly classifying sections of a string of input characters.
-> Wikipedia (last access, Feb. 11, 2018)
 
-- Tokenization is usually the result of applying heuristics to a document to split a single string into a set
-of tokens, which usually pass onto a different form of preprocessing.
+<div style="text-align: right"><span style="color:gray; font-size:0.5em">[Tokenization](https://en.wikipedia.org/wiki/Lexical_analysis#Tokenization) Wikipedia page</span></div>
+
+> Wikipedia (last access, Feb. 11, 2018)
 
 <span style="color:gray; font-size:0.5em">Tokenization example</span>
 
@@ -323,7 +365,7 @@ of tokens, which usually pass onto a different form of preprocessing.
 
 +++
 
-## Tokenization examples
+**Different ways of tokenizing**
 
 - Tokens obtained by splitting sentences by spaces.
 - Separate numbers from letters to be treated as different tokens.
@@ -346,10 +388,9 @@ How to choose best tokenization process:
 
 ---
 
-## From text to numbers
+### Text modeling
 
 ![Image-Absolute](assets/text_to_numbers.png)
-
 
 ---
 
