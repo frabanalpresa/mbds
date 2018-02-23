@@ -147,7 +147,7 @@ Please, do not take my opinions too seriously as I tend to be wrong more times t
   "datasets": [
    {
     "data":[0.057156, 0.058499, 0.056775, 0.06, 0.060428, 0.074999, 0.104, 0.074786, 0.069976],
-    "label":"ZEC/BTE"
+    "label":"ZEC/BTE",
     "backgroundColor":"rgba(20,220,220,.8)"
    }
   ]
@@ -184,6 +184,8 @@ Please, do not take my opinions too seriously as I tend to be wrong more times t
 ---
 
 ### Text preprocessing
+
+<br><br>
 
 @fa[arrow-down]
 
