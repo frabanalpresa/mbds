@@ -1,4 +1,6 @@
-# Natural Language Processing
+@title[Main slide]
+
+## Natural Language Processing
 <span style="font-size:0.6em; color:gray">Máster Big Data Science (UVa)</span> |
 <span style="font-size:0.6em; color:gray">Fernando Rabanal Presa</span>
 
@@ -27,7 +29,9 @@ Please, do not take my opinions too seriously as I tend to be wrong more times t
 - MSc. Multimedia and Communications (Signal Theory) -- UC3M
 - *Kaggle* Master level (Competition winner)
 
-<br>
+@fa[arrow-down]
+
++++
 
 - Data Scientist in *NeoMetrics*/*Accenture Advanced Analytics*
 - Data Scientist in *Touchvie*/*Dive*
@@ -41,10 +45,10 @@ Please, do not take my opinions too seriously as I tend to be wrong more times t
 
 <br>
 
-- Complete a **MSc** program in Data Science (you're on the right track!).
-- Complement your knowledge with some MOOC programs.
-- Practice with different problems.
-- Enter Data Science competitions.
+- Complete a **MSc** program in Data Science (you're on the right track!) |
+- Complement your knowledge with some MOOC programs |
+- Practice with different problems |
+- Enter Data Science competitions |
 - **Provide value to your company**
 
 ---
@@ -52,18 +56,24 @@ Please, do not take my opinions too seriously as I tend to be wrong more times t
 ## What is Natural Language Processing?
 
 > Are there imaginable digital computers which would do well in the *imitation game*?
-> - Alan Turing, "Computing Machinery and Intelligence", 1950
 
-<br>
-
-> Natural language processing (NLP) can be defined as the ability of a machine to analyze, understand, and generate human speech. The goal of NLP is to make interactions between computers and humans feel exactly like interactions between humans and humans.
-> - NeoSpeech, 2013
+<div style="text-align: right">Alan Turing, "Computing Machinery and Intelligence", 1950</div>
 
 @fa[arrow-down]
 
 +++
 
-## Nowadays applications: Chatbots
+> Natural language processing (NLP) can be defined as the ability of a machine to analyze, understand, and generate human speech. The goal of NLP is to make interactions between computers and humans feel exactly like interactions between humans and humans.
+
+<div style="text-align: right">[NeoSpeech, 2013](https://blog.neospeech.com/what-is-natural-language-processing/)</div>
+
+@fa[arrow-down]
+
++++
+
+### Applications:
+
+**Chatbots**
 
 ![Image-Absolute](https://cdn-images-1.medium.com/max/1600/1*hdUgYLkAbzzMCRzOLsrnEA.gif)
 
@@ -73,9 +83,9 @@ Please, do not take my opinions too seriously as I tend to be wrong more times t
 
 +++
 
-## Spam filtering
+**Spam filtering**
 
-![Image-Absolute](https://images.pexels.com/photos/265651/pexels-photo-265651.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb)
+![Image-Absolute](https://images.pexels.com/photos/265651/pexels-photo-265651.jpeg?w=800&h=600&auto=compress&cs=tinysrgb)
 
 <span style="font-size:0.6em; color:gray">Analyzes header</span> |
 <span style="font-size:0.6em; color:gray">Explores content</span> |
@@ -98,7 +108,7 @@ Please, do not take my opinions too seriously as I tend to be wrong more times t
 
 ## Text tagging (clustering)
 
-![Image-Absolute](assets/flickr_tags_screenshot.png)
+![Image-Relative](assets/images/flickr_tags_screenshot.png)
 
 <span style="color:gray; font-size:0.5em"><b>Flickr</b> [tags](https://www.flickr.com/photos/tags) page.</span>
 
@@ -108,7 +118,7 @@ Please, do not take my opinions too seriously as I tend to be wrong more times t
 
 ## News summarization
 
-![Image-Absolute](assets/agolo_screenshot.png)
+![Image-Absolute](assets/images/agolo_screenshot.png)
 
 <span style="color:gray; font-size:0.5em">[Agolo](https://www.agolo.com) is a commercial news summarizer software.</span>
 
@@ -120,7 +130,6 @@ Please, do not take my opinions too seriously as I tend to be wrong more times t
 ## Algorithmic trading
 
 <canvas data-chart="line">
-<!--
 {
  "data": {
   "labels": ["Sep 22","Sep 23","Sep 24","Sep 25","Sep 26","Sep 27","Sep 28", "Sep 29", "Sep 30"],
@@ -133,18 +142,18 @@ Please, do not take my opinions too seriously as I tend to be wrong more times t
  },
  "options": { "responsive": "true" }
 }
--->
 </canvas>
 
 <span style="color:gray; font-size:0.5em">Cryptocurrencies ZEC/BTE exchange rate</span>
 
 ---
 
-?code=src/workflow.py&lang=python&title=NLP usual workflow
+NLP usual workflow
+<!-- ?code=src/workflow.py&lang=python&title=NLP usual workflow
 
 @[1,3-6](Text preprocessing)
 @[8-18](Text modeling)
-@[19-28](Extract insights)
+@[19-28](Extract insights) -->
 
 ---
 

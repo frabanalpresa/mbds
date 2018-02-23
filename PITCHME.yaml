@@ -7,8 +7,8 @@
 theme : night
 theme-override : assets/css/PITCHME.css
 # theme-override : assets/css/PITCHME.codemax.css
-logo : assets/image/logo.png
+# logo : assets/images/logo.png
 highlight : atom-one-light
 transition : none
 published : true
-footnote : "GitPitch [ Netflix ] Presentation Template"
+footnote : "MBDS - Natural Language Processing"
