@@ -28,6 +28,7 @@ Please, do not take my opinions too seriously as I tend to be wrong more times t
 - Telecommunications Engineer -- UVa
 - MSc. Multimedia and Communications (Signal Theory) -- UC3M
 - *Kaggle* Master level (Competition winner)
+
 <br>
 
 @fa[arrow-down]
@@ -38,11 +39,15 @@ Please, do not take my opinions too seriously as I tend to be wrong more times t
 - Data Scientist in *Touchvie*/*Dive*
 - Data Scientist in *Vodafone Group*
 
+<br>
+
 @fa[arrow-down]
 
 +++
 
 #### But it is more interesting to see what can you do
+
+<br>
 
 - Complete a MSc program in Data Science (you're on the right track!)
 - Complement your knowledge with some MOOC programs |
@@ -68,9 +73,7 @@ Please, do not take my opinions too seriously as I tend to be wrong more times t
 
 <div style="text-align: right"><span style="color:gray; font-size:0.5em">[NeoSpeech, 2013](https://blog.neospeech.com/what-is-natural-language-processing/) definition of NLP</span></div>
 
-@fa[arrow-down]
-
-+++
+---
 
 ### Applications
 
@@ -144,6 +147,7 @@ Please, do not take my opinions too seriously as I tend to be wrong more times t
   "datasets": [
    {
     "data":[0.057156, 0.058499, 0.056775, 0.06, 0.060428, 0.074999, 0.104, 0.074786, 0.069976],
+    "label":"ZEC/BTE"
     "backgroundColor":"rgba(20,220,220,.8)"
    }
   ]
@@ -187,6 +191,8 @@ Please, do not take my opinions too seriously as I tend to be wrong more times t
 
 **Why?**
 
+<br>
+
 <table>
   <tr>
     <td>Words</td>
@@ -200,11 +206,10 @@ Please, do not take my opinions too seriously as I tend to be wrong more times t
     <td>Variations</td>
     <td>dog, dogs, puppies...</td>
   </tr>
-  <tr class="fragment">
-    <td>Math does</td>
-    <td>not allow words!</td>
-  </tr>
 </table>
+
+<br>
+<span style="color:gray; font-size:0.8em">Math does not allow words!</span>
 
 ---
 
@@ -214,14 +219,15 @@ Please, do not take my opinions too seriously as I tend to be wrong more times t
 import re
 from string
 
-text = re.sub(r'(<.*?>)', '', text)  # Use BeautifulSoup instead!
+# Use BeautifulSoup instead!
+text = re.sub(r'(<.*?>)', '', text)
 text = re.sub(r'https?:\/\/.*[\r\n]*','', text)
 text = text.translate(None, string.punctuation)
 ```
 
-@[1,4](Strip markup tags)
-@[1,5](Remove URLs)
-@[1-2,6](Remove punctuation signs)
+@[1,4-6](Strip markup tags)
+@[1,6](Remove URLs)
+@[1-2,7](Remove punctuation signs)
 
 @fa[arrow-down]
 
@@ -351,15 +357,13 @@ unnormalized documents.
 
 **Tokenization**
 
-![Image-Absolute](assets/tokenization_example.png)
+![Image-Absolute](assets/images/tokenization_example.png)
+
+<span style="color:gray; font-size:0.5em">Tokenization example</span>
 
 > Tokenization is the process of demarcating and possibly classifying sections of a string of input characters.
 
 <div style="text-align: right"><span style="color:gray; font-size:0.5em">[Tokenization](https://en.wikipedia.org/wiki/Lexical_analysis#Tokenization) Wikipedia page</span></div>
-
-> Wikipedia (last access, Feb. 11, 2018)
-
-<span style="color:gray; font-size:0.5em">Tokenization example</span>
 
 @fa[arrow-down]
 
@@ -367,12 +371,25 @@ unnormalized documents.
 
 **Different ways of tokenizing**
 
-- Tokens obtained by splitting sentences by spaces.
-- Separate numbers from letters to be treated as different tokens.
-- Words with hyphens (-) can be splitted into two tokens (punctuation removal has to account for this case beforehand).
-<br>
+```python
+'lorem ipsum dolor sit amet'.split()
+# ['lorem', 'ipsum', 'dolor', 'sit', 'amet']
 
-How to choose best tokenization process:
+['2way'] != ['2', 'way']
+
+['state-of-the-art'] != ['state', 'of', 'the', 'art']
+```
+@[1-2](Split sentences by spaces)
+@[4](Account for words with numbers!)
+@[5](Hyphens in words)
+
+@fa[arrow-down]
+
++++
+
+**How to choose best tokenization process:**
+
+<br>
 
 <table>
   <tr>
@@ -385,21 +402,20 @@ How to choose best tokenization process:
   </tr>
 </table>
 
-
 ---
 
 ### Text modeling
 
-![Image-Absolute](assets/text_to_numbers.png)
+![Image-Absolute](assets/images/text_to_numbers.png)
 
 ---
 
-## Bag of Words (BoW)
+**Bag of Words (BoW)**
 
 Intends to obtain a Vector Space representation of a document, originally in text domain.
 
-- Madrid looks sunnier than usual this spring. |
-- Real Madrid plays against Atlético Madrid tonight.
+- Madrid looks sunnier than usual this spring |
+- Real Madrid plays against Atlético Madrid tonight |
 
 <br>
 
@@ -419,11 +435,12 @@ Intends to obtain a Vector Space representation of a document, originally in tex
 
 +++
 
-## N-gram representation
+**N-gram representation**
 
 > *n-gram* is a contiguous sequence of n items from a given sample of text or speech. The items can be phonemes,
 syllables, letters, words or base pairs according to the application.
-> Wikipedia (last access, Feb. 11, 2018)
+
+<div style="text-align: right"><span style="color:gray; font-size:0.5em">[n-gram](https://en.wikipedia.org/wiki/N-gram) Wikipedia page</span></div>
 
 <hr>
 Real Madrid plays against Atlético Madrid tonight.
