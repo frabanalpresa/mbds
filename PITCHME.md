@@ -1011,4 +1011,8 @@ Just a small selection of them are:
 
 ---
 
+**Any questions?**
+
+<br>
+
 ![Questions?](https://images.pexels.com/photos/767197/pexels-photo-767197.jpeg?w=500&h=400&auto=compress&cs=tinysrgb)
