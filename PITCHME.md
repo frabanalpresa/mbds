@@ -89,7 +89,7 @@ Please, do not take my opinions too seriously as I tend to be wrong more times t
 
 **Chatbots**
 
-![Image-Absolute](https://cdn-images-1.medium.com/max/1600/1*hdUgYLkAbzzMCRzOLsrnEA.gif)
+![ChatbotExample](https://cdn-images-1.medium.com/max/1600/1*hdUgYLkAbzzMCRzOLsrnEA.gif)
 
 <span style="color:gray; font-size:0.5em">Ordering with Tacobot in <b>Slack</b>. Original blog post by  [chatbotsmagazine](https://chatbotsmagazine.com/11-examples-of-conversational-commerce-57bb8783d332)</span>
 
@@ -99,7 +99,7 @@ Please, do not take my opinions too seriously as I tend to be wrong more times t
 
 **Spam filtering**
 
-![Image-Absolute](https://images.pexels.com/photos/265651/pexels-photo-265651.jpeg?w=500&h=400&auto=compress&cs=tinysrgb)
+![Computer](https://images.pexels.com/photos/265651/pexels-photo-265651.jpeg?w=500&h=400&auto=compress&cs=tinysrgb)
 
 <span style="font-size:0.5em; color:gray">Analyzes header</span> |
 <span style="font-size:0.5em; color:gray">Explores content</span> |
@@ -111,7 +111,7 @@ Please, do not take my opinions too seriously as I tend to be wrong more times t
 
 **Text classification**
 
-![Image-Absolute](https://cdn-images-1.medium.com/max/1600/1*ljCBykAJUnvaZcuPYwm4_A.png)
+![TextClassifier](https://cdn-images-1.medium.com/max/1600/1*ljCBykAJUnvaZcuPYwm4_A.png)
 
 <span style="color:gray; font-size:0.5em">[Towards Data Science](https://towardsdatascience.com/machine-learning-nlp-text-classification-using-scikit-learn-python-and-nltk-c52b92a7c73a) article on Text classification with scikit-learn and NLTK</span>
 
@@ -122,7 +122,7 @@ Please, do not take my opinions too seriously as I tend to be wrong more times t
 
 **Text tagging (clustering)**
 
-![Image-Relative](assets/images/flickr_tags_screenshot.png)
+![FlickrTags](assets/images/flickr_tags_screenshot.png)
 
 <span style="color:gray; font-size:0.5em"><b>Flickr</b> [tags](https://www.flickr.com/photos/tags) page.</span>
 
@@ -132,7 +132,7 @@ Please, do not take my opinions too seriously as I tend to be wrong more times t
 
 **News summarization**
 
-![Image-Relative](assets/images/agolo_screenshot.png)
+![NewsSummary](assets/images/agolo_screenshot.png)
 
 <span style="color:gray; font-size:0.5em">[Agolo](https://www.agolo.com) is a commercial news summarizer software.</span>
 
@@ -305,7 +305,7 @@ lemmatize('meeting') = 'meet'
 
 **Stopwords removal**
 
-![Image-Absolute](http://www.michaeljgrogan.com/wp-content/uploads/2017/10/wordcloud-450x325.png)
+![WordCloud](http://www.michaeljgrogan.com/wp-content/uploads/2017/10/wordcloud-450x325.png)
 
 <span style="color:gray; font-size:0.5em">tidytext: Word Clouds and Sentiment Analysis in R, [Michael Grogan](http://www.michaeljgrogan.com/tidytext-word-clouds-sentiment-r/)</span>
 
@@ -381,7 +381,7 @@ lemmatize('meeting') = 'meet'
 
 **Tokenization**
 
-![Image-Absolute](assets/images/tokenization_example.png)
+![Tokens](assets/images/tokenization_example.png)
 
 <div style="text-align: right"><span style="color:gray; font-size:0.5em">Tokenization example</span></div>
 
@@ -430,25 +430,28 @@ lemmatize('meeting') = 'meet'
 
 ### Text modeling
 
-![Image-Absolute](assets/images/text_to_numbers.png)
+![TextWorkflow](assets/images/text_to_numbers.png)
 
 ---
 
 **Bag of Words (BoW)**
 
+<br>
+
 Intends to obtain a Vector Space representation of a document, originally in text domain.
 
-<hr>
+@fa[arrow-down]
 
-- Madrid looks sunnier than usual this spring
-- Real Madrid plays against Atlético Madrid tonight
++++
+
+- Madrid looks sunnier than usual this spring (1)
+- Real Madrid plays against Atlético Madrid tonight (2)
+
+<br>
 
 <table>
   <tr>
-    <td rowspan="4">
-
-    Docs
-    </td>
+    <td rowspan="2">Docs</td>
     <td colspan="6">Terms</td>
   </tr>
   <tr>
@@ -460,6 +463,7 @@ Intends to obtain a Vector Space representation of a document, originally in tex
     <td>spring</td>
   </tr>
   <tr class="fragment">
+    <td>(1)</td>
     <td>1</td>
     <td>1</td>
     <td>0</td>
@@ -468,6 +472,7 @@ Intends to obtain a Vector Space representation of a document, originally in tex
     <td>1</td>
   </tr>
   <tr class="fragment">
+    <td>(2)</td>
     <td>2</td>
     <td>0</td>
     <td>1</td>
@@ -494,6 +499,8 @@ syllables, letters, words or base pairs according to the application.
 +++
 
 Real Madrid plays against Atlético Madrid tonight.
+
+<br>
 
 <table>
   <tr>
@@ -522,10 +529,12 @@ Real Madrid plays against Atlético Madrid tonight.
 
 > Different measures of raw frequency.
 
+<br><br>
+
 `\begin{eqnarray}
 tf(t,d) & = & f(t,d) \nonumber\\
-tf(t,d) & = & 1+log(f(t,d)) ~,~ (log(0) \coloneqq 0) \nonumber\\
-tf(t,d) & = & \dfrac{f(t,d)}{\max \lbrace f(w,d) : w \in D \rbrace} \nonumber
+tf(t,d) & = & 1+log(f(t,d)) ~,~ (log(0) := 0) \nonumber\\
+tf(t,d) & = & f(t,d) / (\max \lbrace f(w,d) : w \in D \rbrace) \nonumber
 \end{eqnarray}`
 
 @fa[arrow-down]
@@ -538,6 +547,8 @@ tf(t,d) & = & \dfrac{f(t,d)}{\max \lbrace f(w,d) : w \in D \rbrace} \nonumber
 
 > Commonality of the term in the whole collection of documents.
 
+<br><br>
+
 `\begin{equation*}
 idf(t,D) = \log \dfrac{|D|}{|\lbrace d \in D : t \in d \rbrace|}
 \end{equation*}`
@@ -546,7 +557,7 @@ idf(t,D) = \log \dfrac{|D|}{|\lbrace d \in D : t \in d \rbrace|}
 
 **Word embeddings**
 
-![Image-Absolute](assets/images/umap_embedding.png)
+![EmbeddingGraph](assets/images/umap_embedding.png)
 
 <span style="color:gray; font-size:0.5em">Visualization of 3M words from GoogleNews dataset as embedded by  [UMAP](https://arxiv.org/pdf/1802.03426.pdf)</span>
 
@@ -563,57 +574,122 @@ idf(t,D) = \log \dfrac{|D|}{|\lbrace d \in D : t \in d \rbrace|}
 
 ![Dashboard](assets/images/dashboard.png)
 
-<div style="text-align: left"><span style="color:gray; font-size:0.5em">[Dashboard](https://plot.ly/python/dashboard/) example in [Plotly](https://plot.ly)</span></div>
+<div style="text-align: right"><span style="color:gray; font-size:0.5em">[Dashboard](https://plot.ly/python/dashboard/) example in [Plotly](https://plot.ly)</span></div>
 
 ---
 
 **Sentiment analysis**
 
-![Image-Absolute](https://???.jpg)
+![SentimentAnalysis](assets/images/satisfaction.png)
 
-<span style="color:gray; font-size:0.5em">the <b>Daftpunktocat-Guy</b> by [jeejkang](https://github.com/jeejkang)</span>
+<div style="text-align: right"><span style="color:gray; font-size:0.5em">Sample dashboard from satisfaction terminals company. [Link](https://www.happy-or-not.com/es/smiley-terminal-2/)</span></div>
+
+
+@fa[arrow-down]
+
++++
+
+![NegativeSentiment](assets/images/bad_sentiment.png)
+
+<div style="text-align: right"><span style="color:gray; font-size:0.5em">Wordcloud for negative sentiment reviews made by [budhiraja](https://www.kaggle.com/budhiraja/initial-analysis-and-word-clouds) in [Kaggle](https://www.kaggle.com)</span></div>
+
+<span style="font-size:0.5em; color:gray">Count pos/neg words</span> |
+<span style="font-size:0.5em; color:gray">Classify docs</span> |
+<span style="font-size:0.5em; color:gray">Document similarity</span>
 
 ---
 
 **Clustering**
 
-![Image-Absolute](https://???.jpg)
+![Clustering](assets/images/umap_embedding.png)
 
-<span style="color:gray; font-size:0.5em">the <b>Daftpunktocat-Guy</b> by [jeejkang](https://github.com/jeejkang)</span>
-
-@fa[arrow-down]
-
-+++
-
-## Clustering algorithms
-
-- K-means
-- LSI
-- LDA
-
----
-
-## Supervised problems
-
-![Image-Absolute](https://???.jpg)
-
-<span style="color:gray; font-size:0.5em">the <b>Daftpunktocat-Guy</b> by [jeejkang](https://github.com/jeejkang)</span>
+<span style="color:gray; font-size:0.5em">Visualization of 3M words from GoogleNews dataset as embedded by  [UMAP](https://arxiv.org/pdf/1802.03426.pdf)</span>
 
 @fa[arrow-down]
 
 +++
 
-## Supervised algorithms
+**Clustering algorithms: K-means**
 
-- Linear/logistic regression
-- Neural networks
-- K-Nearest Neighbors
+![sklearn-clustering](assets/images/cluster_comparison.png)
+
+<div style="text-align: right"><span style="color:gray; font-size:0.5em">[Comparing different clustering algorithms on toy datasets](http://scikit-learn.org/stable/auto_examples/cluster/plot_cluster_comparison.html)</span></div>
+
+
+@fa[arrow-down]
+
++++
+
+**Clustering algorithms: LSI/LSA**
+
+![TopicModeling](assets/images/topic_models.png)
+
+<div style="text-align: right"><span style="color:gray; font-size:0.5em">Topics extracted from Amazon Fine Food Reviews dataset.</span></div>
 
 ---
 
-## Generative modeling
+**Supervised problems**
+
+![TextClassifier](https://cdn-images-1.medium.com/max/1600/1*ljCBykAJUnvaZcuPYwm4_A.png)
+
+<div style="text-align: right"><span style="color:gray; font-size:0.5em">[Towards Data Science](https://towardsdatascience.com/machine-learning-nlp-text-classification-using-scikit-learn-python-and-nltk-c52b92a7c73a) article on Text classification with scikit-learn and NLTK</span></div>
+
+@fa[arrow-down]
+
++++
+
+**Supervised algorithms: K-Nearest Neighbors**
+
+![KNN](https://upload.wikimedia.org/wikipedia/commons/8/8c/Map5NN.png)
+
+<div style="text-align: right"><span style="color:gray; font-size:0.5em">5-NN applied over a given dataset ([Wikipedia](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm))</span></div>
+
+@fa[arrow-down]
+
++++
+
+**Supervised algorithms: linear/logistic regression**
+
+![Logistic](https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Logistic-curve.svg/400px-Logistic-curve.svg.png)
+
+<div style="text-align: right"><span style="color:gray; font-size:0.5em">Logistic function, base equation for [logistic regression](https://en.wikipedia.org/wiki/Logistic_regression)</span></div>
+
+
+`\begin{eqnarray}
+y & = & w_{1} w_{1} + w_{2} x_{2} + \cdots + w_{N} x_{N} + b \nonumber\\
+ln \left ( \dfrac{p_{i}}{1-p_{i}}\right) & = & w_{1} w_{1} + w_{2} x_{2} + \cdots + w_{N} x_{N} + b \nonumber
+\end{eqnarray}`
+
+@fa[arrow-down]
+
++++
+
+**Supervised algorithms: Neural Networks**
+
+![Neuron](https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Perceptron.svg/600px-Perceptron.svg.png)
+
+<div style="text-align: right"><span style="color:gray; font-size:0.5em">The base of every neural network is the [perceptron](https://en.wikipedia.org/wiki/Perceptron)</span></div>
+
+@fa[arrow-down]
+
++++
+
+**Supervised algorithms: Support Vector Machines**
+
+![SVM](https://upload.wikimedia.org/wikipedia/commons/1/1b/Kernel_Machine.png)
+
+<div style="text-align: right"><span style="color:gray; font-size:0.5em">Spatial transformation provided by kernels in  [SVMs](https://en.wikipedia.org/wiki/Support_vector_machine)</span></div>
+
+---
+
+**Generative modeling**
 
 ![Image-Absolute](https://ddg-mjesip8vchewh1dsl.stackpathdns.com/assets/landing/img/gallery/4.jpg)
+
+
+@fa[arrow-down]
+
++++
 
 <span style="color:gray; font-size:0.5em"><b>Deep Dream</b> example by [deepdreamgenerator](https://deepdreamgenerator.com)</span>
 
@@ -622,25 +698,40 @@ idf(t,D) = \log \dfrac{|D|}{|\lbrace d \in D : t \in d \rbrace|}
 
 +++
 
-## Generative models
+**Generative models**
 
 ![Image-Absolute](https://deeplearning4j.org/img/srn_elman.png)
 
-- [LSTM](https://deeplearning4j.org/lstm.html)
-- [GANs](https://deeplearning4j.org/generative-adversarial-network)
+<div style="text-align: right"><span style="color:gray; font-size:0.5em"><b>Recurrent Net</b> by [Elman](https://deeplearning4j.org/lstm.html)</span></div>
 
-<span style="color:gray; font-size:0.5em"><b>Recurrent Net</b> by [Elman](https://deeplearning4j.org/lstm.html)</span>
+<span style="font-size:0.5em; color:gray">[LSTM](https://deeplearning4j.org/lstm.html)</span> |
+<span style="font-size:0.5em; color:gray">[GANs](https://deeplearning4j.org/generative-adversarial-network)</span>
 
 ---
 
 ## Software modules
 
+<br>
+
+![CatGIF](https://i.giphy.com/media/JIX9t2j0ZTN9S/giphy-downsized.gif)
 
 ---
 
-## R packages: tm
+**tm (R)**
 
-![Image-Absolute](assets/tm_documentation.png)
+<br>
+
+![TM_docs](assets/images/tm_documentation.png)
+
+<div style="text-align: right"><span style="color:gray; font-size:0.5em">[tm](https://cran.r-project.org/web/packages/tm/tm.pdf) documentation first page.</span></div>
+
+@fa[arrow-down]
+
++++
+
+**tm features**
+
+<br>
 
 <table>
   <tr>
@@ -661,15 +752,23 @@ idf(t,D) = \log \dfrac{|D|}{|\lbrace d \in D : t \in d \rbrace|}
   </tr>
 </table>
 
-<span style="color:gray; font-size:0.5em">[tm](https://cran.r-project.org/web/packages/tm/tm.pdf) documentation first page.</span>
+@fa[arrow-down]
+
++++
+
+**tidytext (R)**
+
+![tidytext_cover](assets/images/tidytext_cover.png)
+
+<div style="text-align: right"><span style="color:gray; font-size:0.5em">[tidytext](https://www.tidytextmining.com/) book cover.</span></div>
 
 @fa[arrow-down]
 
 +++
 
-## R packages: tidytext
+**tidytext features**
 
-![Image-Absolute](https://www.tidytextmining.com/images/cover.png)
+<br>
 
 <table>
   <tr>
@@ -690,13 +789,23 @@ idf(t,D) = \log \dfrac{|D|}{|\lbrace d \in D : t \in d \rbrace|}
   </tr>
 </table>
 
-<span style="color:gray; font-size:0.5em">[tidytext](https://www.tidytextmining.com/) book cover.</span>
-
 ---
 
-## Python modules: NLTK
+**NLTK (Python)**
 
-![Image-Absolute](http://www.nltk.org/_images/tree.gif)
+<br>
+
+![nltk_tree](http://www.nltk.org/_images/tree.gif)
+
+<div style="text-align: right"><span style="color:gray; font-size:0.5em">[NLTK](https://www.nltk.org/) example on sentence parsing.</span></div>
+
+@fa[arrow-down]
+
++++
+
+**NLTK features**
+
+<br>
 
 <table>
   <tr>
@@ -721,15 +830,25 @@ idf(t,D) = \log \dfrac{|D|}{|\lbrace d \in D : t \in d \rbrace|}
   </tr>
 </table>
 
-<span style="color:gray; font-size:0.5em">Sentence parsed with [NLTK](http://www.nltk.org/)</span>
+@fa[arrow-down]
+
++++
+
+**gensim (Python)**
+
+<br>
+
+![gensim_logo](https://radimrehurek.com/gensim/_static/images/logo-gensim.png)
+
+<div style="text-align: right"><span style="color:gray; font-size:0.5em">[Gensim](https://radimrehurek.com/gensim/) logo.</span></div>
 
 @fa[arrow-down]
 
 +++
 
-## Python modules: gensim
+**gensim features**
 
-![Image-Absolute](https://radimrehurek.com/gensim/_static/images/logo-gensim.png)
+<br>
 
 <table>
   <tr>
@@ -758,11 +877,9 @@ idf(t,D) = \log \dfrac{|D|}{|\lbrace d \in D : t \in d \rbrace|}
   </tr>
 </table>
 
-<span style="color:gray; font-size:0.5em">[Gensim](https://radimrehurek.com/gensim/) logo.</span>
-
 ---
 
-## Commercial software
+**Commercial software**
 
 Just a small selection of them are:
 
@@ -786,8 +903,12 @@ Just a small selection of them are:
 
 ## Next steps
 
-<span style="font-size:0.6em; color:gray">Where are we now?</span> |
-<span style="font-size:0.6em; color:gray">What else is yet to come?</span>
+<span style="font-size:1em; color:gray">Where are we now?</span> |
+<span style="font-size:1em; color:gray">What else is yet to come?</span>
+
+@fa[arrow-down]
+
++++
 
 <table>
   <tr>
@@ -835,11 +956,9 @@ Just a small selection of them are:
 
 ## Active learning
 
-![Image-Absolute](assets/active_learning_example.png)
+![active_learning](assets/images/active_learning_example.png)
 
-<span style="color:gray; font-size:0.5em">Bryan Pardo, EECS 395/495 Modern Methods in Machine Learning, Spring 2010</span>
-
-@fa[arrow-down]
+<div style="text-align: right"><span style="color:gray; font-size:0.5em">Bryan Pardo, EECS 395/495 Modern Methods in Machine Learning, Spring 2010</span></div>
 
 ---
 
@@ -853,10 +972,18 @@ Just a small selection of them are:
 
 +++
 
-## More online resources
+### More online resources
+
+<br>
 
 - [tidytext](http://tidytextmining.com/) R package textbook.
 - [NLTK](http://www.nltk.org/book/) free textbook for NLP with Python.
+
 <br>
+
 - [Information Retrieval](https://nlp.stanford.edu/IR-book/) textbook (Free)
 - [Foundations of Statistical Natural Language Processing](https://nlp.stanford.edu/fsnlp/promo/) textbook (Not free)
+
+---
+
+![Questions?](https://images.pexels.com/photos/767197/pexels-photo-767197.jpeg?w=500&h=400&auto=compress&cs=tinysrgb)
