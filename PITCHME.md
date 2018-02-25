@@ -447,8 +447,9 @@ Intends to obtain a Vector Space representation of a document, originally in tex
 - Madrid looks sunnier than usual this spring (1)
 - Real Madrid plays against Atlético Madrid tonight (2)
 
+<br>
 
-<table style="color:gray; font-size:0.6em">
+<table style="color:gray; font-size:0.8em">
   <tr>
     <td rowspan="2">Docs</td>
     <td colspan="6">Terms</td>
@@ -501,7 +502,7 @@ Real Madrid plays against Atlético Madrid tonight.
 
 <br>
 
-<table>
+<table style="color:gray; font-size:0.8em">
   <tr>
     <th>Unigram (size 1)</th>
     <th>Bigram (size 2)</th>
@@ -528,7 +529,7 @@ Real Madrid plays against Atlético Madrid tonight.
 
 > Different measures of raw frequency.
 
-<br><br>
+<br>
 
 `\begin{eqnarray}
 tf(t,d) & = & f(t,d) \nonumber\\
@@ -546,7 +547,7 @@ tf(t,d) & = & f(t,d) / (\max \lbrace f(w,d) : w \in D \rbrace) \nonumber
 
 > Commonality of the term in the whole collection of documents.
 
-<br><br>
+<br>
 
 `\begin{equation*}
 idf(t,D) = \log \dfrac{|D|}{|\lbrace d \in D : t \in d \rbrace|}
@@ -653,6 +654,9 @@ idf(t,D) = \log \dfrac{|D|}{|\lbrace d \in D : t \in d \rbrace|}
 
 <div style="text-align: right"><span style="color:gray; font-size:0.5em">Logistic function, base equation for [logistic regression](https://en.wikipedia.org/wiki/Logistic_regression)</span></div>
 
+@fa[arrow-down]
+
++++
 
 `\begin{eqnarray}
 y & = & w_{1} w_{1} + w_{2} x_{2} + \cdots + w_{N} x_{N} + b \nonumber\\
@@ -718,8 +722,6 @@ ln \left ( \dfrac{p_{i}}{1-p_{i}}\right) & = & w_{1} w_{1} + w_{2} x_{2} + \cdot
 
 **tm (R)**
 
-<br>
-
 ![TM_docs](assets/images/tm_documentation.png)
 
 <div style="text-align: right"><span style="color:gray; font-size:0.5em">[tm](https://cran.r-project.org/web/packages/tm/tm.pdf) documentation first page.</span></div>
@@ -732,7 +734,7 @@ ln \left ( \dfrac{p_{i}}{1-p_{i}}\right) & = & w_{1} w_{1} + w_{2} x_{2} + \cdot
 
 <br>
 
-<table>
+<table style="color:gray; font-size:0.8em">
   <tr>
     <th>Pros</th>
     <th>Cons</th>
@@ -759,7 +761,7 @@ ln \left ( \dfrac{p_{i}}{1-p_{i}}\right) & = & w_{1} w_{1} + w_{2} x_{2} + \cdot
 
 ![tidytext_cover](assets/images/tidytext_cover.png)
 
-<div style="text-align: right"><span style="color:gray; font-size:0.5em">[tidytext](https://www.tidytextmining.com/) book cover.</span></div>
+<div style="text-align: right"><span style="color:gray; font-size:0.5em">[tidytext](https://www.tidytextmining.com/) book cover</span></div>
 
 @fa[arrow-down]
 
@@ -769,7 +771,7 @@ ln \left ( \dfrac{p_{i}}{1-p_{i}}\right) & = & w_{1} w_{1} + w_{2} x_{2} + \cdot
 
 <br>
 
-<table>
+<table style="color:gray; font-size:0.8em">
   <tr>
     <th>Pros</th>
     <th>Cons</th>
@@ -806,7 +808,7 @@ ln \left ( \dfrac{p_{i}}{1-p_{i}}\right) & = & w_{1} w_{1} + w_{2} x_{2} + \cdot
 
 <br>
 
-<table>
+<table style="color:gray; font-size:0.8em">
   <tr>
     <th>Pros</th>
     <th>Cons</th>
@@ -839,7 +841,7 @@ ln \left ( \dfrac{p_{i}}{1-p_{i}}\right) & = & w_{1} w_{1} + w_{2} x_{2} + \cdot
 
 ![gensim_logo](https://radimrehurek.com/gensim/_static/images/logo-gensim.png)
 
-<div style="text-align: right"><span style="color:gray; font-size:0.5em">[Gensim](https://radimrehurek.com/gensim/) logo.</span></div>
+<div style="text-align: right"><span style="color:gray; font-size:0.5em">[Gensim](https://radimrehurek.com/gensim/) logo</span></div>
 
 @fa[arrow-down]
 
@@ -849,7 +851,7 @@ ln \left ( \dfrac{p_{i}}{1-p_{i}}\right) & = & w_{1} w_{1} + w_{2} x_{2} + \cdot
 
 <br>
 
-<table>
+<table style="color:gray; font-size:0.8em">
   <tr>
     <th>Pros</th>
     <th>Cons</th>
@@ -882,7 +884,7 @@ ln \left ( \dfrac{p_{i}}{1-p_{i}}\right) & = & w_{1} w_{1} + w_{2} x_{2} + \cdot
 
 Just a small selection of them are:
 
-<table>
+<table style="color:gray; font-size:0.8em">
   <tr class="fragment">
     <td>IBM Watson</td>
     <td>Google Cloud Translation</td>
@@ -909,7 +911,7 @@ Just a small selection of them are:
 
 +++
 
-<table>
+<table style="color:gray; font-size:0.8em">
   <tr>
     <th>Problems</th>
     <th>Current solution</th>
@@ -944,9 +946,9 @@ Just a small selection of them are:
 
 ## Online learning
 
-![Image-Absolute](https://d1z75bzl1vljy2.cloudfront.net/kitchen-sink/octocat-privateinvestocat.jpg)
+At any given time, `$$t$$`, which is the best candidate to maximize accuracy for the model? `$$t+1$$`? `$$t+2$$`?...
 
-<span style="color:gray; font-size:0.5em">the <b>Daftpunktocat-Guy</b> by [jeejkang](https://github.com/jeejkang)</span>
+![Bandits](https://images.pexels.com/photos/5258/addiction-bet-betting-casino.jpg?w=600&h=400&auto=compress&cs=tinysrgb)
 
 
 @fa[arrow-down]
