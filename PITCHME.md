@@ -29,9 +29,20 @@ Please, do not take my opinions too seriously as I tend to be wrong more times t
 
 +++
 
-- Telecommunications Engineer -- UVa
-- MSc. Multimedia and Communications (Signal Theory) -- UC3M
-- *Kaggle* Master level (Competition winner)
+<table style="color:gray; font-size:0.8em">
+  <tr>
+    <td>Telecommunications Engineer</td>
+    <td>UVa</td>
+  </tr>
+  <tr class="fragment">
+    <td>MSc. Multimedia & Communications (Signal Theory)</td>
+    <td>UC3M / URJC</td>
+  </tr>
+  <tr class="fragment">
+    <td>*Kaggle* master level</td>
+    <td>(NLP Competition winner)</td>
+  </tr>
+</table>
 
 <br>
 
@@ -39,9 +50,20 @@ Please, do not take my opinions too seriously as I tend to be wrong more times t
 
 +++
 
-- Data Scientist in *NeoMetrics*/*Accenture Advanced Analytics*
-- Data Scientist in *Touchvie*/*Dive*
-- Data Scientist in *Vodafone Group*
+<table style="color:gray; font-size:0.8em">
+  <tr>
+    <td>Data Scientist</td>
+    <td>NeoMetrics / Accenture</td>
+  </tr>
+  <tr class="fragment">
+    <td>Data Scientist</td>
+    <td>Touchvie / Dive</td>
+  </tr>
+  <tr class="fragment">
+    <td>Data Scientist</td>
+    <td>Vodafone Group</td>
+  </tr>
+</table>
 
 <br>
 
@@ -245,13 +267,15 @@ text = text.translate(None, string.punctuation)
 from nltk.corpus import stopwords
 
 text = text.lower()
-text = [word for word in text.split() if word not in ['et al', 'figure', 'table']]
-text = [word for word in text.split() if word not in stopwords.words('english')]
+text = [word for word in text.split()
+        if word not in ['et al', 'figure', 'table']]
+text = [word for word in text.split()
+        if word not in stopwords.words('english')]
 ```
 
 @[3](Normalize to lowercase characters)
-@[4](Remove non-informative words, expressions...)
-@[1, 5](Remove non-alphanumeric characters)
+@[4-5](Remove non-informative words, expressions...)
+@[1, 6-7](Remove non-alphanumeric characters)
 
 ---
 
@@ -884,6 +908,8 @@ ln \left ( \dfrac{p_{i}}{1-p_{i}}\right) & = & w_{1} w_{1} + w_{2} x_{2} + \cdot
 
 Just a small selection of them are:
 
+<br>
+
 <table style="color:gray; font-size:0.8em">
   <tr class="fragment">
     <td>IBM Watson</td>
@@ -906,6 +932,8 @@ Just a small selection of them are:
 
 <span style="font-size:1em; color:gray">Where are we now?</span> |
 <span style="font-size:1em; color:gray">What else is yet to come?</span>
+
+<br>
 
 @fa[arrow-down]
 
@@ -939,21 +967,17 @@ Just a small selection of them are:
   </tr>
 </table>
 
+<br>
 
-@fa[arrow-down]
-
-+++
+---
 
 **Online learning**
 
-<span style="font-size:0.8em">At any given time, `t`, which is the best candidate to maximize accuracy for the model? `t+1`? `t+2`?...
-</span>
+<span style="font-size:0.8em">At any given time, `t`, which is the best candidate to maximize accuracy for the model? `t+1`? `t+2`?...</span>
 
-![Bandits](https://images.pexels.com/photos/5258/addiction-bet-betting-casino.jpg?w=600&h=400&auto=compress&cs=tinysrgb)
+![Bandits](https://images.pexels.com/photos/5258/addiction-bet-betting-casino.jpg?w=500&h=350&auto=compress&cs=tinysrgb)
 
-@fa[arrow-down]
-
-+++
+---
 
 **Active learning**
 
@@ -965,9 +989,21 @@ Just a small selection of them are:
 
 ### Online resources
 
-- [RDataMining](http://www.rdatamining.com/docs)
-- [Datacamp](https://www.datacamp.com/community/blog/text-mining-in-r-and-python-tips) tips for Text Mining projects in R/Python.
-- [gensim](http://radimrehurek.com/gensim/wiki.html) documentation page (with tutorials).
+<br>
+
+<table style="color:gray; font-size:0.8em">
+  <tr>
+    <td>[RDataMining](http://www.rdatamining.com/docs)</td>
+  </tr>
+  <tr>
+    <td>[Datacamp](https://www.datacamp.com/community/blog/text-mining-in-r-and-python-tips) tips for Text Mining projects in R/Python</td>
+  </tr>
+  <tr>
+    <td>[gensim](http://radimrehurek.com/gensim/wiki.html) documentation page (with tutorials).</td>
+  </tr>
+</table>
+
+<br>
 
 @fa[arrow-down]
 
@@ -977,13 +1013,21 @@ Just a small selection of them are:
 
 <br>
 
-- [tidytext](http://tidytextmining.com/) R package textbook.
-- [NLTK](http://www.nltk.org/book/) free textbook for NLP with Python.
-
-<br>
-
-- [Information Retrieval](https://nlp.stanford.edu/IR-book/) textbook (Free)
-- [Foundations of Statistical Natural Language Processing](https://nlp.stanford.edu/fsnlp/promo/) textbook (Not free)
+<table style="color:gray; font-size:0.8em">
+  <tr>
+    <td>[tidytext](http://tidytextmining.com/) R package textbook.</td>
+  </tr>
+  <tr>
+    <td>[[NLTK](http://www.nltk.org/book/) free textbook for NLP with Python.</td>
+  </tr>
+  <tr><td></td></tr>
+  <tr>
+    <td>[Information Retrieval](https://nlp.stanford.edu/IR-book/) textbook (Free)</td>
+  </tr>
+  <tr>
+    <td>[Foundations of Statistical Natural Language Processing](https://nlp.stanford.edu/fsnlp/promo/) textbook (Not free)</td>
+  </tr>
+</table>
 
 ---
 
