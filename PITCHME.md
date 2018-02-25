@@ -944,20 +944,18 @@ Just a small selection of them are:
 
 +++
 
-## Online learning
+**Online learning**
 
 <span style="font-size:0.8em">At any given time, `t`, which is the best candidate to maximize accuracy for the model? `t+1`? `t+2`?...
 </span>
 
-
 ![Bandits](https://images.pexels.com/photos/5258/addiction-bet-betting-casino.jpg?w=600&h=400&auto=compress&cs=tinysrgb)
-
 
 @fa[arrow-down]
 
 +++
 
-## Active learning
+**Active learning**
 
 ![active_learning](assets/images/active_learning_example.png)
 
@@ -965,7 +963,7 @@ Just a small selection of them are:
 
 ---
 
-## Online resources
+### Online resources
 
 - [RDataMining](http://www.rdatamining.com/docs)
 - [Datacamp](https://www.datacamp.com/community/blog/text-mining-in-r-and-python-tips) tips for Text Mining projects in R/Python.
