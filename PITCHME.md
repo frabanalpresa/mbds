@@ -989,7 +989,6 @@ Just a small selection of them are:
 
 ### Online resources
 
-<br>
 
 <table style="color:gray; font-size:0.8em">
   <tr>
