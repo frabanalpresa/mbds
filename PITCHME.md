@@ -42,16 +42,7 @@ Please, do not take my opinions too seriously as I tend to be wrong more times t
     <td>*Kaggle* master level</td>
     <td>(NLP Competition winner)</td>
   </tr>
-</table>
-
-<br>
-
-@fa[arrow-down]
-
-+++
-
-<table style="color:gray; font-size:0.8em">
-  <tr>
+  <tr class="fragment">
     <td>Data Scientist</td>
     <td>NeoMetrics / Accenture</td>
   </tr>
@@ -589,6 +580,10 @@ idf(t,D) = \log \dfrac{|D|}{|\lbrace d \in D : t \in d \rbrace|}
 
 +++
 
+![WordEmbeddings](assets/images/embeddings.png)
+
+<div style="text-align: right"><span style="color:gray; font-size:0.5em">Representation of different word embeddings for MNIST ([Hashimoto et al., 2015](https://arxiv.org/pdf/1509.05808.pdf))</span></div>
+
 <span style="font-size:0.6em; color:gray">[GloVe](https://nlp.stanford.edu/projects/glove/)</span> |
 <span style="font-size:0.6em; color:gray">[Word2Vec / Doc2Vec](https://arxiv.org/pdf/1301.3781.pdf?)</span>
 
@@ -646,9 +641,9 @@ idf(t,D) = \log \dfrac{|D|}{|\lbrace d \in D : t \in d \rbrace|}
 
 **Clustering algorithms: LSI/LSA**
 
-![TopicModeling](assets/images/topic_models.png)
+![TopicModeling](assets/images/topics_lsa.png)
 
-<div style="text-align: right"><span style="color:gray; font-size:0.5em">Topics extracted from Amazon Fine Food Reviews dataset.</span></div>
+<div style="text-align: right"><span style="color:gray; font-size:0.5em">Sample topics extracted from Amazon Fine Food Reviews dataset.</span></div>
 
 ---
 
@@ -711,7 +706,7 @@ ln \left ( \dfrac{p_{i}}{1-p_{i}}\right) & = & w_{1} w_{1} + w_{2} x_{2} + \cdot
 
 **Generative modeling**
 
-![Image-Absolute](https://ddg-mjesip8vchewh1dsl.stackpathdns.com/assets/landing/img/gallery/4.jpg)
+![DeepDream](https://ddg-mjesip8vchewh1dsl.stackpathdns.com/assets/landing/img/gallery/4.jpg)
 
 
 @fa[arrow-down]
@@ -736,7 +731,7 @@ ln \left ( \dfrac{p_{i}}{1-p_{i}}\right) & = & w_{1} w_{1} + w_{2} x_{2} + \cdot
 
 ---
 
-## Software modules
+### Software modules
 
 <br>
 
@@ -928,7 +923,7 @@ Just a small selection of them are:
 
 ---
 
-## Next steps
+### Next steps
 
 <span style="font-size:1em; color:gray">Where are we now?</span> |
 <span style="font-size:1em; color:gray">What else is yet to come?</span>
