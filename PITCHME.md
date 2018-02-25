@@ -1001,26 +1001,12 @@ Just a small selection of them are:
   <tr>
     <td>[gensim](http://radimrehurek.com/gensim/wiki.html) documentation page (with tutorials).</td>
   </tr>
-</table>
-
-<br>
-
-@fa[arrow-down]
-
-+++
-
-### More online resources
-
-<br>
-
-<table style="color:gray; font-size:0.8em">
   <tr>
     <td>[tidytext](http://tidytextmining.com/) R package textbook.</td>
   </tr>
   <tr>
-    <td>[[NLTK](http://www.nltk.org/book/) free textbook for NLP with Python.</td>
+    <td>[NLTK](http://www.nltk.org/book/) free textbook for NLP with Python.</td>
   </tr>
-  <tr><td></td></tr>
   <tr>
     <td>[Information Retrieval](https://nlp.stanford.edu/IR-book/) textbook (Free)</td>
   </tr>
