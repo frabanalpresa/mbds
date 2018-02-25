@@ -946,7 +946,9 @@ Just a small selection of them are:
 
 ## Online learning
 
-At any given time, `$$t$$`, which is the best candidate to maximize accuracy for the model? `$$t+1$$`? `$$t+2$$`?...
+<span style="font-size:0.8em">At any given time, `t`, which is the best candidate to maximize accuracy for the model? `t+1`? `t+2`?...
+</span>
+
 
 ![Bandits](https://images.pexels.com/photos/5258/addiction-bet-betting-casino.jpg?w=600&h=400&auto=compress&cs=tinysrgb)
 
