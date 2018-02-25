@@ -447,9 +447,8 @@ Intends to obtain a Vector Space representation of a document, originally in tex
 - Madrid looks sunnier than usual this spring (1)
 - Real Madrid plays against Atlético Madrid tonight (2)
 
-<br>
 
-<table>
+<table style="color:gray; font-size:0.6em">
   <tr>
     <td rowspan="2">Docs</td>
     <td colspan="6">Terms</td>
