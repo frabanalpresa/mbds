@@ -14,7 +14,7 @@ Please, do not take my opinions too seriously as I tend to be wrong more times t
 
 ---
 
-[https://gitpitch.com/frabanalpresa/mbds/slides](https://gitpitch.com/frabanalpresa/mbds/slides)
+[https://gitpitch.com/frabanalpresa/mbds/master](https://gitpitch.com/frabanalpresa/mbds/master)
 
 ---
 ### Who am I?
