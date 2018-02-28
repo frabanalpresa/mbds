@@ -188,7 +188,7 @@ text = ' '.join(text)
 
 @[1-3](reveived item fast exactly ordered excellent shape safe shipping came back shop thanks)
 @[5-6](tasted matcha rishi first time today flavor bright assertive fresh)
-@[8-10]('young nearly half century ago chuckles popular candy really enjoyed eating jellied treats')
+@[8-10](young nearly half century ago chuckles popular candy really enjoyed eating jellied treats)
 
 @fa[arrow-down]
 
