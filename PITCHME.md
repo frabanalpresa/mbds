@@ -145,6 +145,55 @@ Different problems can be solved:
 
 +++
 
+**Preprocess example**
+
+```python
+import string
+from nltk.corpus import stopwords
+
+text = ''
+text = text.lower()
+text = \
+  text.translate(str.maketrans('','',
+                               string.punctuation))
+text = [word for word in text.split
+        if word not in stopwords.words('english')]
+text = ' '.join(text)
+```
+
+@[4](Load sentence/text/document)
+@[5](Lowercase characters)
+@[1, 6-8](Remove punctuation)
+@[2, 9-10](Remove stopwords)
+@[11](Form a full sentence)
+
+@fa[arrow-down]
+
++++
+
+**Results**
+
+```python
+# Reveived my item fast! It was exactly what I ordered
+# in excellent shape with safe shipping - i will came
+# back and shop here again.  Thanks
+
+# I tasted this Matcha from Rishi the first time today.
+# The flavor is bright, assertive and fresh...
+
+# When I was young, nearly a half century ago, Chuckles
+# was a very popular candy. I really enjoyed eating
+# these jellied treats...
+```
+
+@[1-3](reveived item fast exactly ordered excellent shape safe shipping came back shop thanks)
+@[5-6](tasted matcha rishi first time today flavor bright assertive fresh)
+@[8-10]('young nearly half century ago chuckles popular candy really enjoyed eating jellied treats')
+
+@fa[arrow-down]
+
++++
+
 **For starters...**
 
 Display some statistics about the text, once it has been cleaned:
