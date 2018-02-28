@@ -22,6 +22,7 @@ Please, do not take my opinions too seriously as I tend to be wrong more times t
 
 ![Amazon](assets/images/amazon.png)
 
+
 @fa[arrow-down]
 
 +++
@@ -119,11 +120,16 @@ Different problems can be solved:
 +++
 
 ```python
-# Reveived my item fast! It was exactly what I ordered in excellent shape with safe shipping - i will came back and shop here again.  Thanks
+# Reveived my item fast! It was exactly what I ordered
+# in excellent shape with safe shipping - i will came
+# back and shop here again.  Thanks
 
-# I tasted this Matcha from Rishi the first time today. The flavor is bright, assertive and fresh...
+# I tasted this Matcha from Rishi the first time today.
+# The flavor is bright, assertive and fresh...
 
-# When I was young, nearly a half century ago, Chuckles was a very popular candy. I really enjoyed eating these jellied treats...
+# When I was young, nearly a half century ago, Chuckles
+# was a very popular candy. I really enjoyed eating
+# these jellied treats...
 ```
 
 @fa[arrow-down]
@@ -195,8 +201,14 @@ Display some statistics about the text, once it has been cleaned:
   </tr>
   <tr class="fragment">
     <td colspan="2">Summarize reviews</td>
+  </tr>
+  <tr class="fragment">
     <td colspan="2">Clusterize users</td>
+  </tr>
+  <tr class="fragment">
     <td colspan="2">Rating prediction</td>
+  </tr>
+  <tr class="fragment">
     <td colspan="2">Popularity prediction</td>
   </tr>
 </table>
@@ -205,7 +217,9 @@ Display some statistics about the text, once it has been cleaned:
 
 ### Choose an environment
 
-![CatGIF](https://i.giphy.com/media/JIX9t2j0ZTN9S/giphy-downsized.gif)
+![r_vs_python](assets/images/r_vs_python)
+
+<div style="text-align: right"><span style="color:gray; font-size:0.5em">[DataCamp](https://www.datacamp.com/community/tutorials/r-or-python-for-data-analysis) analysis for R vs Python.</span></div>
 
 @fa[arrow-down]
 
@@ -263,3 +277,5 @@ Display some statistics about the text, once it has been cleaned:
 ## Have fun!
 
 ![cloud](assets/images/wordcloud.png)
+
+<div style="text-align: right"><span style="color:gray; font-size:0.5em">[Kaggle home page](https://www.kaggle.com/snap/amazon-fine-food-reviews) for dataset, SNAP group, 2016.</span></div>
