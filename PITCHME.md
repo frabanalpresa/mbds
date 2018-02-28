@@ -241,12 +241,14 @@ from string
 # Use BeautifulSoup instead!
 text = re.sub(r'(<.*?>)', '', text)
 text = re.sub(r'https?:\/\/.*[\r\n]*','', text)
-text = text.translate(None, string.punctuation)
+text = \
+  text.translate(str.maketrans('', '',
+                 string.punctuation))
 ```
 
 @[1,4-6](Strip markup tags)
 @[1,6](Remove URLs)
-@[1-2,7](Remove punctuation signs)
+@[1-2,7-9](Remove punctuation signs)
 
 @fa[arrow-down]
 
@@ -308,9 +310,9 @@ base or root form—generally a written word form.
 **Stemming examples**
 
 ```python
-lemmatize('better') = 'better'
-lemmatize('walking') = 'walk'
-lemmatize('meeting') = 'meet'
+stem('better') = 'better'
+stem('walking') = 'walk'
+stem('meeting') = 'meet'
 ```
 
 @[1,2](No linguistics assumed.)
