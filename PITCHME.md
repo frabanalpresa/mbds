@@ -32,7 +32,12 @@ Please, do not take my opinions too seriously as I tend to be wrong more times t
 - CC0: Public Domain License
 - [J. McAuley and Jure Leskovec, From amateurs to connoisseurs: modeling the evolution of user expertise through online reviews, 2013](http://i.stanford.edu/~julian/pdfs/www13.pdf)
 
-<br>
+
+@fa[arrow-down]
+
++++
+
+**Data sources**
 
 [http://snap.stanford.edu/data/web-FineFoods.html](http://snap.stanford.edu/data/web-FineFoods.html)
 [https://www.kaggle.com/snap/amazon-fine-food-reviews](https://www.kaggle.com/snap/amazon-fine-food-reviews)
@@ -79,6 +84,10 @@ Please, do not take my opinions too seriously as I tend to be wrong more times t
 > From amateurs to connoisseurs: modeling the evolution of user expertise through online reviews
 
 <div style="text-align: right"><span style="color:gray; font-size:0.5em">[J. McAuley and Jure Leskovec, 2013](http://i.stanford.edu/~julian/pdfs/www13.pdf)</span></div>
+
+@fa[arrow-down]
+
++++
 
 Different problems can be solved:
 
@@ -190,6 +199,13 @@ Display some statistics about the text, once it has been cleaned:
     <td>Topic modeling</td>
     <td>LSI/LDA</td>
   </tr>
+</table>
+
+@fa[arrow-down]
+
++++
+
+<table style="color:gray; font-size:0.8em">
   <tr class="fragment"><th colspan="2">Other problems</th></tr>
   <tr class="fragment">
     <td>Word similarity</td>
@@ -217,7 +233,7 @@ Display some statistics about the text, once it has been cleaned:
 
 ### Choose an environment
 
-![r_vs_python](assets/images/r_vs_python)
+![r_vs_python](assets/images/r_vs_python.png)
 
 <div style="text-align: right"><span style="color:gray; font-size:0.5em">[DataCamp](https://www.datacamp.com/community/tutorials/r-or-python-for-data-analysis) analysis for R vs Python.</span></div>
 
