@@ -156,7 +156,7 @@ text = text.lower()
 text = \
   text.translate(str.maketrans('','',
                                string.punctuation))
-text = [word for word in text.split
+text = [word for word in text.split()
         if word not in stopwords.words('english')]
 text = ' '.join(text)
 ```
@@ -344,3 +344,13 @@ Display some statistics about the text, once it has been cleaned:
 ![cloud](assets/images/wordcloud.png)
 
 <div style="text-align: right"><span style="color:gray; font-size:0.5em">[Kaggle home page](https://www.kaggle.com/snap/amazon-fine-food-reviews) for dataset, SNAP group, 2016.</span></div>
+
+---
+
+### Additional challenges
+
+- [Yelp Dataset](https://www.yelp.com/dataset/challenge), also in [Kaggle Datasets](https://www.kaggle.com/yelp-dataset/yelp-dataset).
+
+<br>
+
+- [Open Food Facts](https://world.openfoodfacts.org/), also in [Kaggle Datasets](https://www.kaggle.com/openfoodfacts/world-food-facts).
