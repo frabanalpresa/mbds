@@ -1112,14 +1112,11 @@ Just a small selection of them are:
 **What else?**
 
 - Improve support for different languages.
-- Algorithmic fairness. |
-- Increase models explainability. |
-- Improve human-level details (sarcasm, context, mispelling...) |
-- Leverage different models for NLP (local models* vs deep learning) |
-- ... and whatever you can think of! |
-
-<br>
-[local model example](https://arxiv.org/pdf/1802.05319.pdf)
+- Algorithmic fairness.
+- Increase models explainability.
+- Improve human-level details (sarcasm, context, mispelling...)
+- Leverage different models for NLP ([local models](https://arxiv.org/pdf/1802.05319.pdf) vs deep learning)
+- ... and whatever you can think of!
 
 ---
 
