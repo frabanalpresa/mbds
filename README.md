@@ -21,6 +21,6 @@ Also, a print version is available at that link, and an offline HTML5 version ca
 
 ## What to expect from these slides
 
-This is an introduction to NLP problems and algorithms, but from an informative perspective, not a technical one. The student is expected to learn the basics of NLP, recognize an NLP problem and propose a classic solution towards its solution. Cutting-edge, state-of-the-art solutions are mentioned also for reference, though the thorough study of the latest solutions is not in scope in these slides.
+This is an introduction to NLP problems and algorithms from an informative perspective, not a technical one. The student is expected to learn the basics of NLP, recognize an NLP problem and propose a classic solution towards its solution. Cutting-edge, state-of-the-art solutions are mentioned also for reference, though the deep, thorough study of the latest solutions is not in scope in these slides.
 
 Before tailoring a business-ready solution, the student is expected to double-check regular NLP handbooks and original sources to complete this training.

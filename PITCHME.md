@@ -176,6 +176,14 @@ Please, do not take my opinions too seriously as I tend to be wrong more times t
 
 <span style="color:gray; font-size:0.5em">Cryptocurrencies ZEC/BTE exchange rate</span>
 
+@fa[arrow-down]
+
++++
+
+**How can I help you?**
+
+![Voice assistants](https://c.mobilegeeks.de/wp-content/uploads/2017/06/HomePod-Home-Invoke-Echo-1280x720.jpg)
+
 ---
 
 **NLP usual workflow**
@@ -586,8 +594,55 @@ idf(t,D) = \log \dfrac{|D|}{|\lbrace d \in D : t \in d \rbrace|}
 
 <div style="text-align: right"><span style="color:gray; font-size:0.5em">Representation of different word embeddings for MNIST ([Hashimoto et al., 2015](https://arxiv.org/pdf/1509.05808.pdf))</span></div>
 
-<span style="font-size:0.6em; color:gray">[GloVe](https://nlp.stanford.edu/projects/glove/)</span> |
-<span style="font-size:0.6em; color:gray">[Word2Vec / Doc2Vec](https://arxiv.org/pdf/1301.3781.pdf?)</span>
+<span style="font-size:0.4em; color:gray">[GloVe](https://nlp.stanford.edu/projects/glove/)</span> |
+<span style="font-size:0.4em; color:gray">[FastText](https://fasttext.cc/)</span> |
+<span style="font-size:0.4em; color:gray">[Word2Vec / Doc2Vec](https://arxiv.org/pdf/1301.3781.pdf?)</span>
+
+@fa[arrow-down]
+
++++
+
+**Character n-gram embeddings**
+
+Why?
+
+<br>
+
+<table style="color:gray; font-size:0.8em">
+  <tr class="fragment">
+    <td>Fit out-of-vocabulary words</td>
+  </tr>
+  <tr class="fragment">
+    <td>Adapt mispelled words</td>
+  </tr>
+  <tr class="fragment">
+    <td>Handle infrequent words</td>
+  </tr>
+  <tr class="fragment">
+    <td>Lower model complexity (more speed)</td>
+  </tr>
+</table>
+
+<span style="font-size:0.4em; color:gray">[CNN (Microsoft)](http://www.iro.umontreal.ca/~lisa/pointeurs/ir0895-he-2.pdf)</span> |
+<span style="font-size:0.4em; color:gray">[CNN (IBM)](http://proceedings.mlr.press/v32/santos14.pdf)</span> |
+<span style="font-size:0.4em; color:gray">[CNN (NYU)](https://arxiv.org/pdf/1509.01626.pdf)</span> |
+<span style="font-size:0.4em; color:gray">[JMT](https://arxiv.org/pdf/1611.01587.pdf)</span>
+
+@fa[arrow-down]
+
++++
+
+**Contextualized word embeddings**
+
+![Cove results](assets/images/cove_results.png)
+
+<div style="text-align: right"><span style="color:gray; font-size:0.5em">Results comparing GloVe and Cove, from [CoVe](http://papers.nips.cc/paper/7209-learned-in-translation-contextualized-word-vectors.pdf) paper</span></div>
+
+<span style="font-size:0.6em; color:gray">[CoVe](http://papers.nips.cc/paper/7209-learned-in-translation-contextualized-word-vectors.pdf)</span> |
+<span style="font-size:0.6em; color:gray">[ELMo](https://arxiv.org/pdf/1802.05365.pdf)</span>
+
+
+@fa[arrow-down]
 
 ---
 
@@ -708,7 +763,7 @@ ln \left ( \dfrac{p_{i}}{1-p_{i}}\right) & = & w_{1} w_{1} + w_{2} x_{2} + \cdot
 
 **Generative modeling**
 
-![DeepDream](https://ddg-mjesip8vchewh1dsl.stackpathdns.com/assets/landing/img/gallery/4.jpg)
+![DeepDream](https://deepdreamgenerator.com/assets/landing/img/gallery/4.jpg)
 
 
 @fa[arrow-down]
@@ -730,6 +785,30 @@ ln \left ( \dfrac{p_{i}}{1-p_{i}}\right) & = & w_{1} w_{1} + w_{2} x_{2} + \cdot
 
 <span style="font-size:0.5em; color:gray">[LSTM](https://deeplearning4j.org/lstm.html)</span> |
 <span style="font-size:0.5em; color:gray">[GANs](https://deeplearning4j.org/generative-adversarial-network)</span>
+
+---
+
+**POS tagging**
+
+![POS-example](https://www.researchgate.net/profile/Sebastiano_Panichella/publication/317932958/figure/fig1/AS:536749530193920@1504982468186/POS-tagging-and-dependency-example-4.png)
+
+<div style="text-align: right"><span style="color:gray; font-size:0.5em">Example of POS tagging from ([Panichella](https://www.researchgate.net/publication/317932958_Analyzing_APIs_Documentation_and_Code_to_Detect_Directive_Defects), 2017)</span></div>
+
+---
+
+**Named-Entity Recognition**
+
+![NER example](https://cdn-images-1.medium.com/max/1600/1*WY-qzjgGc7yYHoDcUZIQdQ.png)
+
+<div style="text-align: right"><span style="color:gray; font-size:0.5em">Example from [NER: Applications and Use Cases](https://towardsdatascience.com/named-entity-recognition-applications-and-use-cases-acdbf57d595e)</span></div>
+
+---
+
+**Semantic Role Labeling**
+
+![SRL example](https://image.slidesharecdn.com/02semanticrolelabellingjm-160120155826/95/semantic-role-labeling-8-638.jpg?cb=1453305885)
+
+<div style="text-align: right"><span style="color:gray; font-size:0.5em">Example from class notes on [SRL](https://www.slideshare.net/marinasantini1/semantic-role-labeling)</span></div>
 
 ---
 
@@ -899,6 +978,80 @@ ln \left ( \dfrac{p_{i}}{1-p_{i}}\right) & = & w_{1} w_{1} + w_{2} x_{2} + \cdot
   </tr>
 </table>
 
+@fa[arrow-down]
+
++++
+
+**SpaCy (Python)**
+
+<br>
+
+![spacy_logo](https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/SpaCy_logo.svg/1200px-SpaCy_logo.svg.png)
+
+<div style="text-align: right"><span style="color:gray; font-size:0.5em">[SpaCy](https://spacy.io) logo</span></div>
+
+@fa[arrow-down]
+
++++
+
+**SpaCy features**
+
+<table style="color:gray; font-size:0.8em">
+  <tr>
+    <th>Pros</th>
+    <th>Cons</th>
+  </tr>
+  <tr class="fragment">
+    <td>Focus on production-ready models</td>
+    <td>Connects with TF, Keras...</td>
+  </tr>
+  <tr class="fragment">
+    <td>Not so extensive open-source community</td>
+    <td></td>
+  </tr>
+</table>
+
+@fa[arrow-down]
+
++++
+
+**Other libraries (Python)**
+
+- [Polyglot](http://polyglot.readthedocs.org/)
+- [TextBlob](https://textblob.readthedocs.io/en/dev/)
+
+---
+
+### Latest open-source releases (2018)
+
+<table style="color:gray; font-size:0.8em">
+  <tr>
+    <th>Name</th>
+    <th>Company</th>
+    <th>Architecture</th>
+  </tr>
+  <tr class="fragment">
+    <td>[PyText](https://github.com/facebookresearch/pytext)</td>
+    <td>Facebook</td>
+    <td>Deep Learning over PyTorch</td>
+  </tr>
+  <tr class="fragment">
+    <td>[BERT](https://github.com/brightmart/bert_language_understanding)</td>
+    <td>Google</td>
+    <td>Deep Bidirectional Transformers over Tensorflow</td>
+  </tr>
+  <tr class="fragment">
+    <td>[NLP Architect](https://github.com/NervanaSystems/nlp-architect)</td>
+    <td>Nervana (Intel)</td>
+    <td>Framework with latest developments</td>
+  </tr>
+  <tr class="fragment">
+    <td>[Flair](https://github.com/zalandoresearch/flair)</td>
+    <td>Zalando</td>
+    <td>Bidirectional LSTM-CRF</td>
+  </tr>
+</table>
+
 ---
 
 **Commercial software**
@@ -922,7 +1075,6 @@ Just a small selection of them are:
   </tr>
 </table>
 
-
 ---
 
 ### Next steps
@@ -936,31 +1088,20 @@ Just a small selection of them are:
 
 +++
 
+**Where are we now?**
+
 <table style="color:gray; font-size:0.8em">
   <tr>
-    <th>Problems</th>
-    <th>Current solution</th>
-    <th>Near future</th>
+    <td>Fraud detection</td>
+    <td>Chatbots / Assistants</td>
   </tr>
   <tr class="fragment">
-    <td>Spam classification</td>
-    <td>Supervised algorithms (~99%)</td>
-    <td>--</td>
+    <td>News digest</td>
+    <td>Product similarity</td>
   </tr>
   <tr class="fragment">
-    <td>Chatbots</td>
-    <td>Generative models</td>
-    <td>Improved generative models</td>
-  </tr>
-  <tr class="fragment">
-    <td>Text summarizer</td>
-    <td>Document embeddings</td>
-    <td>Local/global embeddings</td>
-  </tr>
-  <tr class="fragment">
-    <td>Documents semantics</td>
-    <td>Document embeddings</td>
-    <td>Semantic modelling</td>
+    <td>Job recommendation engines</td>
+    <td>Marketing effectiveness</td>
   </tr>
 </table>
 
@@ -968,24 +1109,18 @@ Just a small selection of them are:
 
 ---
 
-**Online learning**
+**What else?**
 
-<span style="font-size:0.8em">At any given time, `t`, which is the best candidate to maximize accuracy for the model? `t+1`? `t+2`?...</span>
-
-![Bandits](https://images.pexels.com/photos/5258/addiction-bet-betting-casino.jpg?w=500&h=350&auto=compress&cs=tinysrgb)
-
----
-
-**Active learning**
-
-![active_learning](assets/images/active_learning_example.png)
-
-<div style="text-align: right"><span style="color:gray; font-size:0.5em">Bryan Pardo, EECS 395/495 Modern Methods in Machine Learning, Spring 2010</span></div>
+- Improve support for different languages.
+- Algorithmic fairness. |
+- Increase models explainability. |
+- Improve human-level details (sarcasm, context, mispelling...) |
+- Leverage different models for NLP ([local models](https://arxiv.org/pdf/1802.05319.pdf) vs deep learning) |
+- ... and whatever **you** can think of! |
 
 ---
 
 ### Online resources
-
 
 <table style="color:gray; font-size:0.8em">
   <tr>
@@ -1000,6 +1135,15 @@ Just a small selection of them are:
   <tr>
     <td>[tidytext](http://tidytextmining.com/) R package textbook.</td>
   </tr>
+</table>
+
+@fa[arrow-down]
+
++++
+
+### Online resources (II)
+
+<table>
   <tr>
     <td>[NLTK](http://www.nltk.org/book/) free textbook for NLP with Python.</td>
   </tr>
@@ -1008,6 +1152,9 @@ Just a small selection of them are:
   </tr>
   <tr>
     <td>[Foundations of Statistical Natural Language Processing](https://nlp.stanford.edu/fsnlp/promo/) textbook (Not free)</td>
+  </tr>
+  <tr>
+    <td>[Modern Deep Learning techniques applied to NLP](https://nlpoverview.com/)</td>
   </tr>
 </table>
 
