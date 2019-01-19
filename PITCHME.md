@@ -1115,8 +1115,11 @@ Just a small selection of them are:
 - Algorithmic fairness. |
 - Increase models explainability. |
 - Improve human-level details (sarcasm, context, mispelling...) |
-- Leverage different models for NLP ([local models](https://arxiv.org/pdf/1802.05319.pdf) vs deep learning) |
-- ... and whatever **you** can think of! |
+- Leverage different models for NLP (local models* vs deep learning) |
+- ... and whatever you can think of! |
+
+<br>
+[local model example](https://arxiv.org/pdf/1802.05319.pdf)
 
 ---
 
@@ -1143,7 +1146,7 @@ Just a small selection of them are:
 
 ### Online resources (II)
 
-<table>
+<table style="color:gray; font-size:0.8em">
   <tr>
     <td>[NLTK](http://www.nltk.org/book/) free textbook for NLP with Python.</td>
   </tr>
