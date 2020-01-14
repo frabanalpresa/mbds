@@ -269,7 +269,7 @@ from nltk.corpus import stopwords
 
 text = text.lower()
 text = [word for word in text.split()
-        if word not in ['et al', 'figure', 'table']]
+        if word not in ['figure', 'table']]
 text = [word for word in text.split()
         if word not in stopwords.words('english')]
 ```
@@ -330,7 +330,7 @@ stem('meeting') = 'meet'
 
 **Stopwords removal**
 
-![WordCloud](http://www.michaeljgrogan.com/wp-content/uploads/2017/10/wordcloud-450x325.png)
+![WordCloud](https://miro.medium.com/max/512/1*roac6QdO8NdBoHZ8CAr5gg.png)
 
 <span style="color:gray; font-size:0.5em">tidytext: Word Clouds and Sentiment Analysis in R, [Michael Grogan](http://www.michaeljgrogan.com/tidytext-word-clouds-sentiment-r/)</span>
 
@@ -779,9 +779,9 @@ ln \left ( \dfrac{p_{i}}{1-p_{i}}\right) & = & w_{1} w_{1} + w_{2} x_{2} + \cdot
 
 **Generative models**
 
-![Image-Absolute](https://deeplearning4j.org/img/srn_elman.png)
+![Image-RNN](https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/12/06022525/bptt.png)
 
-<div style="text-align: right"><span style="color:gray; font-size:0.5em"><b>Recurrent Net</b> by [Elman](https://deeplearning4j.org/lstm.html)</span></div>
+<div style="text-align: right"><span style="color:gray; font-size:0.5em"><b>Recurrent Net</b> by [AnalyticsVidhya](https://www.analyticsvidhya.com/blog/2017/12/introduction-to-recurrent-neural-networks/)</span></div>
 
 <span style="font-size:0.5em; color:gray">[LSTM](https://deeplearning4j.org/lstm.html)</span> |
 <span style="font-size:0.5em; color:gray">[GANs](https://deeplearning4j.org/generative-adversarial-network)</span>
@@ -890,6 +890,43 @@ ln \left ( \dfrac{p_{i}}{1-p_{i}}\right) & = & w_{1} w_{1} + w_{2} x_{2} + \cdot
   </tr>
 </table>
 
+@fa[arrow-down]
+
++++
+
+**quanteda (R)**
+
+![quanteda logo](https://tutorials.quanteda.io/images/logo-white.svg)
+
+<div style="text-align: right"><span style="color:gray; font-size:0.5em">[quanteda](https://tutorials.quanteda.io/) logo</span></div>
+
+@fa[arrow-down]
+
++++
+
+**quanteda features**
+
+<br>
+
+<table style="color:gray; font-size:0.8em">
+  <tr>
+    <th>Pros</th>
+    <th>Cons</th>
+  </tr>
+  <tr class="fragment">
+    <td>Good documentation</td>
+    <td>Still in-memory solution (from R)</td>
+  </tr>
+  <tr class="fragment">
+    <td>Wide range of activities</td>
+    <td></td>
+  </tr>
+  <tr class="fragment">
+    <td>Wide range of languages</td>
+    <td></td>
+  </tr>
+</table>
+
 ---
 
 **NLTK (Python)**
@@ -976,6 +1013,10 @@ ln \left ( \dfrac{p_{i}}{1-p_{i}}\right) & = & w_{1} w_{1} + w_{2} x_{2} + \cdot
     <td>Distributed computing</td>
     <td></td>
   </tr>
+  <tr class="fragment">
+    <td>R counterpart: **text2vec**</td>
+    <td></td>
+  </tr>
 </table>
 
 @fa[arrow-down]
@@ -1006,8 +1047,8 @@ ln \left ( \dfrac{p_{i}}{1-p_{i}}\right) & = & w_{1} w_{1} + w_{2} x_{2} + \cdot
     <td>Connects with TF, Keras...</td>
   </tr>
   <tr class="fragment">
+    <td>R package also available (**spacyr**)</td>
     <td>Not so extensive open-source community</td>
-    <td></td>
   </tr>
 </table>
 
@@ -1051,6 +1092,25 @@ ln \left ( \dfrac{p_{i}}{1-p_{i}}\right) & = & w_{1} w_{1} + w_{2} x_{2} + \cdot
     <td>Bidirectional LSTM-CRF</td>
   </tr>
 </table>
+
+@fa[arrow-down]
+
++++
+
+### Latest open-source releases (2019)
+
+![BertNotice](assets/images/bert_blog.png)
+
+<div style="text-align: right"><span style="color:gray; font-size:0.5em">How BERT changed Google, by its [Vice President](https://www.blog.google/products/search/search-language-understanding-bert/) logo</span></div>
+
+@fa[arrow-down]
+
++++
+
+**Other resources**
+
+- [XLNet: outperforming BERT on 20 tasks](https://github.com/zihangdai/xlnet/)
+- [Repository for state-of-art NLP solutions](https://github.com/sebastianruder/NLP-progress)
 
 ---
 
