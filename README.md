@@ -11,14 +11,6 @@ Along these notes, the reader will be introduced to one of the basic subtasks of
 
 [MBDS](https://www.tel.uva.es/docencia/planes/masterbds.htm) program is a MSc degree from University of Valladolid (UVa, Spain), aimed to provide postgraduate education in Big Data and Data Science fields as an introductory point in a business-oriented approach.
 
-## How to render the slides
-
-Slides are accessible through [GitPitch](https://gitpitch.com/) service. Due to that reason, an online version is accessible through the link:
-
-- [https://gitpitch.com/frabanalpresa/mbds/master/](https://gitpitch.com/frabanalpresa/mbds/master/)
-
-Also, a print version is available at that link, and an offline HTML5 version can be accessed.
-
 ## What to expect from these slides
 
 This is an introduction to NLP problems and algorithms from an informative perspective, not a technical one. The student is expected to learn the basics of NLP, recognize an NLP problem and propose a classic solution towards its solution. Cutting-edge, state-of-the-art solutions are mentioned also for reference, though the deep, thorough study of the latest solutions is not in scope in these slides.

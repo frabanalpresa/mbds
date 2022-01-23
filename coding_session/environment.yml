@@ -1,0 +1,21 @@
+name: nlp-mbds
+channels:
+  - conda-forge
+dependencies:
+  - python
+  - gensim
+  - jupyterlab
+  - nltk
+  - numpy
+  - pandas
+  - regex
+  - requests
+  - scikit-learn
+  - scipy
+  - spacy
+  - umap-learn
+  - matplotlib
+  - altair
+  - ipywidgets
+  - loguru
+  - pip
