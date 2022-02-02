@@ -49,7 +49,7 @@ style: |
 
 ---
 
-### [https://github.com/frabanalpresa/mbds/master](https://github.com/frabanalpresa/mbds/master)
+### [https://github.com/frabanalpresa/mbds](https://github.com/frabanalpresa/mbds)
 
 ---
 
